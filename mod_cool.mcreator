@@ -12,6 +12,19 @@
           "src/main/java/net/mcreator/modcool/item/BaboumItem.java"
         ]
       }
+    },
+    {
+      "name": "Testtttt",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testtttt",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mod_cool/models/item/testtttt.json",
+          "src/main/java/net/mcreator/modcool/item/TestttttItem.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -20,11 +33,13 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "item.mod_cool.baboum": "Baboum"
+      "item.mod_cool.baboum": "Baboum",
+      "item.mod_cool.testtttt": "Testtttt"
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/modcool/init/ModCoolModItems.java",
       "src/main/java/net/mcreator/modcool/network/PlayPlayerAnimationMessage.java",
       "src/main/java/net/mcreator/modcool/mixin/CameraAccessor.java",
       "src/main/java/net/mcreator/modcool/mixin/ItemInHandLayerMixin.java",

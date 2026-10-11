@@ -8,14 +8,17 @@ import net.neoforged.neoforge.registries.DeferredItem;
 
 import net.minecraft.world.item.Item;
 
+import net.mcreator.modcool.item.TestttttItem;
 import net.mcreator.modcool.item.BaboumItem;
 import net.mcreator.modcool.ModCoolMod;
 
 public class ModCoolModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(ModCoolMod.MODID);
 	public static final DeferredItem<Item> BABOUM;
+	public static final DeferredItem<Item> TESTTTTT;
 	static {
 		BABOUM = REGISTRY.register("baboum", BaboumItem::new);
+		TESTTTTT = REGISTRY.register("testtttt", TestttttItem::new);
 	}
 	// Start of user code block custom items
 	// End of user code block custom items
