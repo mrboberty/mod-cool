@@ -3,7 +3,7 @@
     {
       "name": "Testtttt",
       "type": "item",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "testtttt",
       "metadata": {
