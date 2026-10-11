@@ -1,0 +1,51 @@
+{
+  "mod_elements": [],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {}
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/modcool/network/PlayPlayerAnimationMessage.java",
+      "src/main/java/net/mcreator/modcool/mixin/CameraAccessor.java",
+      "src/main/java/net/mcreator/modcool/mixin/ItemInHandLayerMixin.java",
+      "src/main/java/net/mcreator/modcool/ModCoolModPlayerAnimationAPI.java",
+      "src/main/java/net/mcreator/modcool/client/RenderUtils.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/java/net/mcreator/modcool/mixin/LevelRendererMixin.java",
+      "src/main/java/net/mcreator/modcool/mixin/ItemInHandRendererMixin.java",
+      "src/main/resources/mod_cool.mixins.json",
+      "src/main/java/net/mcreator/modcool/mixin/PlayerAnimationMixin.java",
+      "src/main/java/net/mcreator/modcool/mixin/EntityRenderDispatcherMixin.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/modcool/mixin/LivingEntityRendererMixin.java",
+      "src/main/java/net/mcreator/modcool/mixin/PlayerAnimationRendererMixin.java",
+      "src/main/java/net/mcreator/modcool/client/ItemArms.java",
+      "src/main/java/net/mcreator/modcool/ModCoolMod.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "mod_cool",
+    "modName": "mod_cool",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.1",
+    "modElementsPackage": "net.mcreator.modcool"
+  },
+  "mcreatorVersion": 202600114619
+}
