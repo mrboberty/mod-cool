@@ -1,5 +1,19 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "Cool",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cool",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/modcool/item/CoolItem.java",
+          "src/main/resources/assets/mod_cool/models/item/cool.json"
+        ]
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {},
@@ -7,11 +21,13 @@
   "language_map": {
     "en_us": {
       "item.mod_cool.baboum": "Baboum",
-      "item.mod_cool.pop": "Pop"
+      "item.mod_cool.pop": "Pop",
+      "item.mod_cool.cool": "Cool"
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/modcool/init/ModCoolModItems.java",
       "src/main/java/net/mcreator/modcool/network/PlayPlayerAnimationMessage.java",
       "src/main/java/net/mcreator/modcool/mixin/CameraAccessor.java",
       "src/main/java/net/mcreator/modcool/mixin/ItemInHandLayerMixin.java",
