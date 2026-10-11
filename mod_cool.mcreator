@@ -1,14 +1,31 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "Baboum",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baboum",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/modcool/item/BaboumItem.java",
+          "src/main/resources/assets/mod_cool/models/item/baboum.json"
+        ]
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {},
   "tab_element_order": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.mod_cool.baboum": "Baboum"
+    }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/modcool/init/ModCoolModItems.java",
       "src/main/java/net/mcreator/modcool/network/PlayPlayerAnimationMessage.java",
       "src/main/java/net/mcreator/modcool/mixin/CameraAccessor.java",
       "src/main/java/net/mcreator/modcool/mixin/ItemInHandLayerMixin.java",
