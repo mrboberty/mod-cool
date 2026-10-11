@@ -3,7 +3,7 @@
     {
       "name": "Testtttt",
       "type": "item",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "testtttt",
       "metadata": {
@@ -16,7 +16,7 @@
     {
       "name": "Pop",
       "type": "item",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "pop",
       "metadata": {
@@ -38,6 +38,19 @@
           "src/main/java/net/mcreator/modcool/item/PlinnitemItem.java"
         ]
       }
+    },
+    {
+      "name": "Plinnitem2",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plinnitem_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/modcool/item/Plinnitem2Item.java",
+          "src/main/resources/assets/mod_cool/models/item/plinnitem_2.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -49,7 +62,8 @@
       "item.mod_cool.baboum": "Baboum",
       "item.mod_cool.testtttt": "Testtttt",
       "item.mod_cool.pop": "Pop",
-      "item.mod_cool.plinnitem": "Plinnitem"
+      "item.mod_cool.plinnitem": "Plinnitem",
+      "item.mod_cool.plinnitem_2": "Plinnitem 2"
     }
   },
   "metadata": {
