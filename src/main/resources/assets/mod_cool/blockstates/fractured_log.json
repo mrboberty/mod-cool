@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "mod_cool:block/fractured_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "mod_cool:block/fractured_log"
+    },
+    "axis=z": {
+      "model": "mod_cool:block/fractured_log",
+      "x": 90
+    }
+  }
+}

@@ -1,6 +1,27 @@
 package net.mcreator.modcool.procedures;
 
+import net.neoforged.neoforge.network.handling.IPayloadContext;
+import net.neoforged.neoforge.network.PacketDistributor;
+import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
+import net.neoforged.api.distmarker.Dist;
+
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
+import net.minecraft.network.protocol.PacketFlow;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.core.SectionPos;
+
+import net.mcreator.modcool.network.ModCoolModVariables;
+import net.mcreator.modcool.ModCoolMod;
+
+import javax.annotation.Nullable;
 
 @EventBusSubscriber(Dist.CLIENT)
 public class TesteProcedure {

@@ -1,6 +1,8 @@
 package net.mcreator.modcool.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.level.LevelAccessor;
+
+import net.mcreator.modcool.network.ModCoolModVariables;
 
 public class Definira0Procedure {
 	public static void execute(LevelAccessor world) {

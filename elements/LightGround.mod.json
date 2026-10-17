@@ -55,7 +55,7 @@
         "value": "DECORATIONS"
       }
     ],
-    "destroyTool": "Not specified",
+    "destroyTool": "shovel",
     "customDrop": {
       "value": ""
     },

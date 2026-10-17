@@ -1,6 +1,12 @@
 package net.mcreator.modcool.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
+
+import net.mcreator.modcool.network.ModCoolModVariables;
+import net.mcreator.modcool.init.ModCoolModItems;
 
 public class Shadow_scoreProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {

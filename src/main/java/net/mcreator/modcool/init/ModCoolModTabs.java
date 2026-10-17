@@ -23,11 +23,15 @@ public class ModCoolModTabs {
 		if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(ModCoolModBlocks.LIGHT_GRASS.get().asItem());
 			tabData.accept(ModCoolModBlocks.LIGHT_GROUND.get().asItem());
+			tabData.accept(ModCoolModBlocks.FRACTURED_LOG.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(ModCoolModItems.SHADOWSAMPLE.get());
 			tabData.accept(ModCoolModItems.LIGHT_SAMPLE.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(ModCoolModItems.POLYVALENT_SCEPTER.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+			tabData.accept(ModCoolModItems.THE_REALM.get());
+			tabData.accept(ModCoolModItems.LIGHT_ESSENCE_BUCKET.get());
 		}
 	}
 }
