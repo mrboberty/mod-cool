@@ -18,6 +18,10 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.modcool.init.ModCoolModTabs;
+import net.mcreator.modcool.init.ModCoolModItems;
+import net.mcreator.modcool.init.ModCoolModBlocks;
+
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Queue;
 import java.util.PriorityQueue;
@@ -38,6 +42,9 @@ public class ModCoolMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
+		ModCoolModBlocks.REGISTRY.register(modEventBus);
+		ModCoolModItems.REGISTRY.register(modEventBus);
+		ModCoolModTabs.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

@@ -1,21 +1,52 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "TheRealm",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_realm",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mod_cool/dimension/the_realm.json",
+          "src/main/java/net/mcreator/modcool/item/TheRealmItem.java",
+          "src/main/resources/assets/mod_cool/models/block/the_realm_portal_ew.json",
+          "src/main/resources/assets/mod_cool/blockstates/the_realm_portal.json",
+          "src/main/java/net/mcreator/modcool/block/TheRealmPortalBlock.java",
+          "src/main/resources/assets/mod_cool/models/item/the_realm.json",
+          "src/main/resources/assets/mod_cool/models/block/the_realm_portal_ns.json",
+          "src/main/java/net/mcreator/modcool/world/teleporter/TheRealmTeleporter.java",
+          "src/main/resources/data/mod_cool/dimension_type/the_realm.json",
+          "src/main/java/net/mcreator/modcool/world/dimension/TheRealmDimension.java",
+          "src/main/java/net/mcreator/modcool/world/teleporter/TheRealmPortalShape.java"
+        ]
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.DIRT#0"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
       "item.mod_cool.baboum": "Baboum",
-      "item.mod_cool.pop": "Pop"
+      "item.mod_cool.pop": "Pop",
+      "item.mod_cool.the_realm": "The Realm Portal Igniter"
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/modcool/init/ModCoolModBlocks.java",
+      "src/main/java/net/mcreator/modcool/init/ModCoolModItems.java",
       "src/main/java/net/mcreator/modcool/network/PlayPlayerAnimationMessage.java",
       "src/main/java/net/mcreator/modcool/mixin/CameraAccessor.java",
       "src/main/java/net/mcreator/modcool/mixin/ItemInHandLayerMixin.java",
       "src/main/java/net/mcreator/modcool/ModCoolModPlayerAnimationAPI.java",
+      "src/main/java/net/mcreator/modcool/init/ModCoolModTabs.java",
       "src/main/java/net/mcreator/modcool/client/RenderUtils.java",
       "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/java/net/mcreator/modcool/mixin/LevelRendererMixin.java",
