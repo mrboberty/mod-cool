@@ -4,7 +4,7 @@
   "definition": {
     "biomesInDimension": [
       {
-        "value": "plains"
+        "value": "CUSTOM:LitUpFields"
       }
     ],
     "biomesInDimensionCaves": [],
@@ -24,7 +24,11 @@
     "useCustomEffects": true,
     "hasClouds": true,
     "cloudHeight": 192,
-    "skyType": "NONE",
+    "skyType": "NORMAL",
+    "airColor": {
+      "value": -13210,
+      "falpha": 0.0
+    },
     "sunHeightAffectsFog": false,
     "canRespawnHere": false,
     "hasFog": false,
@@ -38,7 +42,7 @@
     "hasSkyLight": true,
     "imitateOverworldBehaviour": true,
     "piglinSafe": false,
-    "hasRaids": true,
+    "hasRaids": false,
     "minMonsterSpawnLightLimit": 0,
     "maxMonsterSpawnLightLimit": 7,
     "monsterSpawnBlockLightLimit": 0,

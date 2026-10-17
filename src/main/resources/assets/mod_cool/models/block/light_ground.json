@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mod_cool:block/light_ground",
+    "up": "mod_cool:block/light_ground",
+    "north": "mod_cool:block/light_ground",
+    "east": "mod_cool:block/light_ground",
+    "south": "mod_cool:block/light_ground",
+    "west": "mod_cool:block/light_ground",
+    "particle": "mod_cool:block/light_ground"
+  },
+  "render_type": "solid"
+}

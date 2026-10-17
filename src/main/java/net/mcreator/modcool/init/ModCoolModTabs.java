@@ -22,6 +22,9 @@ public class ModCoolModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(ModCoolModItems.THE_REALM.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+			tabData.accept(ModCoolModBlocks.LIGHT_GRASS.get().asItem());
+			tabData.accept(ModCoolModBlocks.LIGHT_GROUND.get().asItem());
 		}
 	}
 }

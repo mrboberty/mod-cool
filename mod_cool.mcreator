@@ -20,13 +20,75 @@
           "src/main/java/net/mcreator/modcool/world/dimension/TheRealmDimension.java",
           "src/main/java/net/mcreator/modcool/world/teleporter/TheRealmPortalShape.java"
         ]
-      }
+      },
+      "path": "~/LightWorld"
+    },
+    {
+      "name": "LightGrass",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_grass",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mod_cool/models/item/light_grass.json",
+          "src/main/java/net/mcreator/modcool/block/LightGrassBlock.java",
+          "src/main/resources/assets/mod_cool/models/block/light_grass.json",
+          "src/main/resources/assets/mod_cool/blockstates/light_grass.json"
+        ]
+      },
+      "path": "~/LightWorld"
+    },
+    {
+      "name": "LightGround",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_ground",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mod_cool/models/block/light_ground.json",
+          "src/main/resources/data/mod_cool/loot_table/blocks/light_ground.json",
+          "src/main/resources/assets/mod_cool/blockstates/light_ground.json",
+          "src/main/java/net/mcreator/modcool/block/LightGroundBlock.java",
+          "src/main/resources/assets/mod_cool/models/item/light_ground.json"
+        ]
+      },
+      "path": "~/LightWorld"
+    },
+    {
+      "name": "LightGrassLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_grass_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mod_cool/loot_table/blocks/the_realm.json"
+        ]
+      },
+      "path": "~/LightWorld"
+    },
+    {
+      "name": "LitUpFields",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lit_up_fields",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mod_cool/worldgen/biome/lit_up_fields.json"
+        ]
+      },
+      "path": "~/LightWorld"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~CUSTOM:LightGrass",
+      "~CUSTOM:LightGround",
       "~Blocks.DIRT#0"
     ]
   },
@@ -35,7 +97,10 @@
     "en_us": {
       "item.mod_cool.baboum": "Baboum",
       "item.mod_cool.pop": "Pop",
-      "item.mod_cool.the_realm": "The Realm Portal Igniter"
+      "item.mod_cool.the_realm": "The Realm Portal Igniter",
+      "block.mod_cool.light_grass": "Light Grass",
+      "block.mod_cool.light_ground": "Light Ground",
+      "biome.mod_cool.lit_up_fields": "Lit Up Fields"
     }
   },
   "metadata": {
@@ -64,7 +129,12 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "LightWorld",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "mod_cool",
