@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "equinox:block/fractured_log_top",
+    "up": "equinox:block/fractured_log_top",
+    "north": "equinox:block/fractured_log",
+    "east": "equinox:block/fractured_log",
+    "south": "equinox:block/fractured_log",
+    "west": "equinox:block/fractured_log",
+    "particle": "equinox:block/fractured_log_top"
+  },
+  "render_type": "solid"
+}

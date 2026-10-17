@@ -1,0 +1,384 @@
+{
+  "mod_elements": [
+    {
+      "name": "LightGrass",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_grass",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/equinox/models/item/light_grass.json",
+          "src/main/resources/assets/equinox/blockstates/light_grass.json",
+          "src/main/java/net/mcreator/equinox/block/LightGrassBlock.java",
+          "src/main/resources/assets/equinox/models/block/light_grass.json"
+        ]
+      },
+      "path": "~/LightWorld"
+    },
+    {
+      "name": "LightGround",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_ground",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/equinox/models/block/light_ground.json",
+          "src/main/java/net/mcreator/equinox/block/LightGroundBlock.java",
+          "src/main/resources/assets/equinox/blockstates/light_ground.json",
+          "src/main/resources/assets/equinox/models/item/light_ground.json",
+          "src/main/resources/data/equinox/loot_table/blocks/light_ground.json"
+        ]
+      },
+      "path": "~/LightWorld"
+    },
+    {
+      "name": "LitUpFields",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lit_up_fields",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/equinox/worldgen/biome/lit_up_fields.json"
+        ]
+      },
+      "path": "~/LightWorld"
+    },
+    {
+      "name": "LightGrassLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_grass_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/equinox/loot_table/blocks/the_realm.json"
+        ]
+      },
+      "path": "~/LightWorld"
+    },
+    {
+      "name": "TheRealm",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_realm",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/equinox/blockstates/the_realm_portal.json",
+          "src/main/resources/assets/equinox/models/block/the_realm_portal_ns.json",
+          "src/main/java/net/mcreator/equinox/item/TheRealmItem.java",
+          "src/main/java/net/mcreator/equinox/world/dimension/TheRealmDimension.java",
+          "src/main/java/net/mcreator/equinox/block/TheRealmPortalBlock.java",
+          "src/main/resources/assets/equinox/models/item/the_realm.json",
+          "src/main/resources/data/equinox/dimension/the_realm.json",
+          "src/main/resources/assets/equinox/models/block/the_realm_portal_ew.json",
+          "src/main/resources/data/equinox/dimension_type/the_realm.json",
+          "src/main/java/net/mcreator/equinox/world/teleporter/TheRealmPortalShape.java",
+          "src/main/java/net/mcreator/equinox/world/teleporter/TheRealmTeleporter.java"
+        ]
+      }
+    },
+    {
+      "name": "LightEssence",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_essence",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/equinox/block/LightEssenceBlock.java",
+          "src/main/resources/assets/equinox/blockstates/light_essence.json",
+          "src/main/resources/assets/equinox/models/item/light_essence_bucket.json",
+          "src/main/java/net/mcreator/equinox/item/LightEssenceItem.java",
+          "src/main/resources/assets/equinox/models/block/light_essence.json",
+          "src/main/java/net/mcreator/equinox/fluid/LightEssenceFluid.java",
+          "src/main/java/net/mcreator/equinox/fluid/types/LightEssenceFluidType.java"
+        ]
+      },
+      "path": "~/LightWorld"
+    },
+    {
+      "name": "FracturedLog",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fractured_log",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/equinox/models/block/fractured_log.json",
+          "src/main/java/net/mcreator/equinox/block/FracturedLogBlock.java",
+          "src/main/resources/data/equinox/loot_table/blocks/fractured_log.json",
+          "src/main/resources/assets/equinox/blockstates/fractured_log.json",
+          "src/main/resources/assets/equinox/models/item/fractured_log.json"
+        ]
+      },
+      "path": "~/LightWorld"
+    },
+    {
+      "name": "PolyvalentScepter",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polyvalent_scepter",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/equinox/item/PolyvalentScepterItem.java",
+          "src/main/resources/assets/equinox/models/item/polyvalent_scepter.json"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "LightPellet",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_pellet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/equinox/item/LightPelletItem.java",
+          "src/main/resources/assets/equinox/models/item/light_pellet.json"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "DarknessPellet",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkness_pellet",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/equinox/models/item/darkness_pellet.json",
+          "src/main/java/net/mcreator/equinox/item/DarknessPelletItem.java"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "Equinox",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "equinox",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "LightProjectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/equinox/client/renderer/LightProjectileRenderer.java",
+          "src/main/java/net/mcreator/equinox/entity/LightProjectileEntity.java"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "PolyvalentScepterRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polyvalent_scepter_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/equinox/procedures/PolyvalentScepterRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "LightProjectileProjectileHitsLivingEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_projectile_projectile_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/equinox/procedures/LightProjectileProjectileHitsLivingEntityProcedure.java"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~CUSTOM:LightGrass",
+      "~CUSTOM:LightGround"
+    ],
+    "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:LightEssence"
+    ],
+    "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:FracturedLog"
+    ],
+    "BLOCKS:minecraft:mineable/shovel": [
+      "~CUSTOM:LightGround",
+      "~CUSTOM:LightGrass"
+    ]
+  },
+  "tab_element_order": {
+    "CUSTOM:Equinox": [
+      "LightGrass",
+      "LightGround",
+      "FracturedLog",
+      "PolyvalentScepter",
+      "LightPellet",
+      "DarknessPellet",
+      "TheRealm",
+      "LightEssence"
+    ]
+  },
+  "language_map": {
+    "en_us": {
+      "item.mod_cool.baboum": "Baboum",
+      "item.mod_cool.pop": "Pop",
+      "item.mod_cool.the_realm": "The Realm Portal Igniter",
+      "block.mod_cool.light_ground": "Light Ground",
+      "block.mod_cool.light_grass": "Light Grass",
+      "item.mod_cool.light_essence_bucket": "Light Essence Bucket",
+      "fluid.mod_cool.light_essence": "Light Essence",
+      "block.mod_cool.light_essence": "Light Essence",
+      "fluid_type.mod_cool.light_essence": "Light Essence",
+      "block.mod_cool.fractured_log": "Fractured Log",
+      "item.mod_cool.polyvalent_scepter": "Polyvalent Scepter",
+      "item.mod_cool.light_pellet": "Light Pellet",
+      "item.mod_cool.darkness_pellet": "Darkness Pellet",
+      "block.equinox.light_grass": "Light Grass",
+      "block.equinox.light_ground": "Light Ground",
+      "biome.equinox.lit_up_fields": "Lit Up Fields",
+      "item.equinox.the_realm": "The Realm Portal Igniter",
+      "fluid.equinox.light_essence": "Light Essence",
+      "fluid_type.equinox.light_essence": "Light Essence",
+      "item.equinox.light_essence_bucket": "Light Essence Bucket",
+      "block.equinox.light_essence": "Light Essence",
+      "block.equinox.fractured_log": "Fractured Log",
+      "item.equinox.polyvalent_scepter": "Polyvalent Scepter",
+      "item.equinox.light_pellet": "Light Pellet",
+      "item.equinox.darkness_pellet": "Darkness Pellet",
+      "item_group.equinox.equinox": "Equinox"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/equinox/init/EquinoxModFluids.java",
+      "src/main/java/net/mcreator/equinox/init/EquinoxModFluidTypes.java",
+      "src/main/java/net/mcreator/equinox/init/EquinoxModBlocks.java",
+      "src/main/java/net/mcreator/equinox/init/EquinoxModItems.java",
+      "src/main/java/net/mcreator/equinox/init/EquinoxModEntities.java",
+      "src/main/java/net/mcreator/equinox/init/EquinoxModEntityRenderers.java",
+      "src/main/java/net/mcreator/equinox/mixin/PlayerAnimationRendererMixin.java",
+      "src/main/java/net/mcreator/equinox/EquinoxModPlayerAnimationAPI.java",
+      "src/main/resources/equinox.mixins.json",
+      "src/main/java/net/mcreator/equinox/mixin/ItemInHandRendererMixin.java",
+      "src/main/java/net/mcreator/equinox/client/RenderUtils.java",
+      "src/main/java/net/mcreator/equinox/init/EquinoxModModels.java",
+      "src/main/java/net/mcreator/equinox/network/PlayPlayerAnimationMessage.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/java/net/mcreator/equinox/mixin/LevelRendererMixin.java",
+      "src/main/java/net/mcreator/equinox/mixin/LivingEntityRendererMixin.java",
+      "src/main/java/net/mcreator/equinox/mixin/PlayerAnimationMixin.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/equinox/mixin/ItemInHandLayerMixin.java",
+      "src/main/java/net/mcreator/equinox/mixin/CameraAccessor.java",
+      "src/main/java/net/mcreator/equinox/init/EquinoxModTabs.java",
+      "src/main/java/net/mcreator/equinox/EquinoxMod.java",
+      "src/main/java/net/mcreator/equinox/mixin/EntityRenderDispatcherMixin.java",
+      "src/main/java/net/mcreator/equinox/client/ItemArms.java"
+    ],
+    "betteranimations_models": {},
+    "betteranimations_perspectives": {}
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "LightWorld",
+        "children": []
+      },
+      {
+        "name": "PolyvalentScepter",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "equinox",
+    "modName": "equinox",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "photon"
+    ],
+    "currentGenerator": "neoforge-1.21.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.equinox"
+  },
+  "mcreatorVersion": 202600114619
+}

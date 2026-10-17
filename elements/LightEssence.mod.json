@@ -37,7 +37,7 @@
     "textureBucket": "minecraft:bucket",
     "creativeTabs": [
       {
-        "value": "TOOLS"
+        "value": "CUSTOM:Equinox"
       }
     ],
     "emptySound": {

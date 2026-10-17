@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "equinox:block/fractured_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "equinox:block/fractured_log"
+    },
+    "axis=z": {
+      "model": "equinox:block/fractured_log",
+      "x": 90
+    }
+  }
+}

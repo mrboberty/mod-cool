@@ -1,8 +1,7 @@
 {
   "replace": false,
   "values": [
-    "mod_cool:light_ground",
-    "mod_cool:light_grass",
-    "minecraft:dirt"
+    "equinox:light_ground",
+    "equinox:light_grass"
   ]
 }
