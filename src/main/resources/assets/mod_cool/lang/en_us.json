@@ -1,8 +1,5 @@
 {
   "item.mod_cool.baboum": "Baboum",
   "item.mod_cool.pop": "Pop",
-  "item.mod_cool.the_realm": "The Realm Portal Igniter",
-  "block.mod_cool.light_grass": "Light Grass",
-  "block.mod_cool.light_ground": "Light Ground",
-  "biome.mod_cool.lit_up_fields": "Lit Up Fields"
+  "item.mod_cool.the_realm": "The Realm Portal Igniter"
 }

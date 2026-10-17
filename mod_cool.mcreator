@@ -20,8 +20,7 @@
           "src/main/java/net/mcreator/modcool/world/dimension/TheRealmDimension.java",
           "src/main/java/net/mcreator/modcool/world/teleporter/TheRealmPortalShape.java"
         ]
-      },
-      "path": "~/LightWorld"
+      }
     },
     {
       "name": "LightGrass",
@@ -57,6 +56,19 @@
       "path": "~/LightWorld"
     },
     {
+      "name": "LitUpFields",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lit_up_fields",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mod_cool/worldgen/biome/lit_up_fields.json"
+        ]
+      },
+      "path": "~/LightWorld"
+    },
+    {
       "name": "LightGrassLoot",
       "type": "loottable",
       "compiles": true,
@@ -70,20 +82,98 @@
       "path": "~/LightWorld"
     },
     {
-      "name": "LitUpFields",
-      "type": "biome",
+      "name": "Light_score",
+      "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "lit_up_fields",
+      "registry_name": "light_score",
       "metadata": {
+        "dependencies": [],
         "files": [
-          "src/main/resources/data/mod_cool/worldgen/biome/lit_up_fields.json"
+          "src/main/java/net/mcreator/modcool/procedures/Light_scoreProcedure.java"
         ]
       },
-      "path": "~/LightWorld"
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "Shadowsample",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shadowsample",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mod_cool/models/item/shadowsample.json",
+          "src/main/java/net/mcreator/modcool/item/ShadowsampleItem.java"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "LightSample",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_sample",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/modcool/item/LightSampleItem.java",
+          "src/main/resources/assets/mod_cool/models/item/light_sample.json"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "Shadow_score",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shadow_score",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/modcool/procedures/Shadow_scoreProcedure.java"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "PolyvalentScepter",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polyvalent_scepter",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mod_cool/models/item/polyvalent_scepter.json",
+          "src/main/java/net/mcreator/modcool/item/PolyvalentScepterItem.java"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "Teste",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teste",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/modcool/procedures/TesteProcedure.java"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "Polyvalent_Scepter_Score",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    }
+  ],
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:overworld_carver_replaceables": [
@@ -97,10 +187,7 @@
     "en_us": {
       "item.mod_cool.baboum": "Baboum",
       "item.mod_cool.pop": "Pop",
-      "item.mod_cool.the_realm": "The Realm Portal Igniter",
-      "block.mod_cool.light_grass": "Light Grass",
-      "block.mod_cool.light_ground": "Light Ground",
-      "biome.mod_cool.lit_up_fields": "Lit Up Fields"
+      "item.mod_cool.the_realm": "The Realm Portal Igniter"
     }
   },
   "metadata": {
@@ -132,6 +219,10 @@
     "children": [
       {
         "name": "LightWorld",
+        "children": []
+      },
+      {
+        "name": "PolyvalentScepter",
         "children": []
       }
     ]

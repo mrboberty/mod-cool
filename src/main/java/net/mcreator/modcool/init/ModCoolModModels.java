@@ -8,6 +8,8 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
+import net.mcreator.modcool.client.model.ModelPolyvalentScepter;
+
 @EventBusSubscriber(Dist.CLIENT)
 public class ModCoolModModels {
 	@SubscribeEvent

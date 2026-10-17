@@ -25,6 +25,11 @@ public class ModCoolModTabs {
 		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(ModCoolModBlocks.LIGHT_GRASS.get().asItem());
 			tabData.accept(ModCoolModBlocks.LIGHT_GROUND.get().asItem());
+		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+			tabData.accept(ModCoolModItems.SHADOWSAMPLE.get());
+			tabData.accept(ModCoolModItems.LIGHT_SAMPLE.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
+			tabData.accept(ModCoolModItems.POLYVALENT_SCEPTER.get());
 		}
 	}
 }
