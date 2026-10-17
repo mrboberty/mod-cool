@@ -62,11 +62,20 @@
     {
       "name": "Light_score",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "light_score",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
         "files": [
           "src/main/java/net/mcreator/modcool/procedures/Light_scoreProcedure.java"
         ]
@@ -104,11 +113,20 @@
     {
       "name": "Shadow_score",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "shadow_score",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
         "files": [
           "src/main/java/net/mcreator/modcool/procedures/Shadow_scoreProcedure.java"
         ]
@@ -132,13 +150,154 @@
     {
       "name": "Teste",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "teste",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
         "files": [
           "src/main/java/net/mcreator/modcool/procedures/TesteProcedure.java"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "Scorepolyvalent0",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scorepolyvalent_0",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/modcool/command/Scorepolyvalent0Command.java"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "Definira0testeab",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "definira_0testeab",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/modcool/procedures/Definira0testeabProcedure.java"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "Detecteechantillon",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "detecteechantillon",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/modcool/procedures/DetecteechantillonProcedure.java"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "Lancement_des_echantiollon",
+      "type": "procedure",
+      "compiles": false,
+      "locked_code": false,
+      "registry_name": "lancement_des_echantiollon",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/modcool/procedures/Lancement_des_echantiollonProcedure.java"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "Changementdechantillon",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "changementdechantillon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/modcool/network/ChangementdechantillonMessage.java"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "Polyvalentaba0",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polyvalentaba_0",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/modcool/command/Polyvalentaba0Command.java"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "Definira0",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "definira_0",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/modcool/procedures/Definira0Procedure.java"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "Sample_change_touche",
+      "type": "procedure",
+      "compiles": false,
+      "locked_code": false,
+      "registry_name": "sample_change_touche",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/modcool/procedures/Sample_change_toucheProcedure.java"
         ]
       },
       "path": "~/PolyvalentScepter"
@@ -150,19 +309,35 @@
       "type": "number",
       "scope": "map",
       "value": "0"
+    },
+    {
+      "name": "Polyvalent_Scepter_A_B",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
     }
   ],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~CUSTOM:LightGrass",
+      "~CUSTOM:LightGround",
+      "~Blocks.DIRT#0"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
       "item.mod_cool.baboum": "Baboum",
-      "item.mod_cool.pop": "Pop"
+      "item.mod_cool.pop": "Pop",
+      "item.mod_cool.polyvalent_scepter": "Polyvalent Scepter",
+      "item.mod_cool.shadowsample": "Shadow sample",
+      "item.mod_cool.light_sample": "Light Sample"
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/modcool/init/ModCoolModKeyMappings.java",
       "src/main/java/net/mcreator/modcool/init/ModCoolModBlocks.java",
       "src/main/java/net/mcreator/modcool/init/ModCoolModItems.java",
       "src/main/java/net/mcreator/modcool/network/PlayPlayerAnimationMessage.java",

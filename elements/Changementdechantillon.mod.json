@@ -1,0 +1,12 @@
+{
+  "_fv": 85,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "0",
+    "keyBindingName": "sample change",
+    "keyBindingCategoryKey": "gameplay",
+    "onKeyPressed": {
+      "name": "Sample_change_touche"
+    }
+  }
+}

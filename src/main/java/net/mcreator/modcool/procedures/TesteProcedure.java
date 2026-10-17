@@ -7,7 +7,7 @@ public class TesteProcedure {
 	@SubscribeEvent
 	public static void onLeftClick(PlayerInteractEvent.LeftClickEmpty event) {
 		PacketDistributor.sendToServer(new TesteMessage());
-		execute();
+		execute(event.getLevel());
 	}
 
 	@EventBusSubscriber
@@ -26,7 +26,7 @@ public class TesteProcedure {
 				context.enqueueWork(() -> {
 					if (!context.player().level().getChunkSource().hasChunk(SectionPos.blockToSectionCoord(context.player().getX()), SectionPos.blockToSectionCoord(context.player().getZ())))
 						return;
-					execute();
+					execute(context.player().level());
 				}).exceptionally(e -> {
 					context.connection().disconnect(Component.literal(e.getMessage()));
 					return null;
@@ -40,13 +40,19 @@ public class TesteProcedure {
 		}
 	}
 
-	public static void execute() {
-		execute(null);
+	public static void execute(LevelAccessor world) {
+		execute(null, world);
 	}
 
-private static void execute(
-@Nullable Event event
-) {
-if (==0) {ModCoolMod.LOGGER.info("rien");}else if (==1) {ModCoolMod.LOGGER.info("ombre");}else if (==2) {ModCoolMod.LOGGER.info("lumi\u00E8re");}else if (==3) {ModCoolMod.LOGGER.info("lumi\u00E8re et ombre");}
-}
+	private static void execute(@Nullable Event event, LevelAccessor world) {
+		if (ModCoolModVariables.MapVariables.get(world).Polyvalent_Scepter_Score == 0) {
+			ModCoolMod.LOGGER.info("rien");
+		} else if (ModCoolModVariables.MapVariables.get(world).Polyvalent_Scepter_Score == 1) {
+			ModCoolMod.LOGGER.info("ombre");
+		} else if (ModCoolModVariables.MapVariables.get(world).Polyvalent_Scepter_Score == 2) {
+			ModCoolMod.LOGGER.info("lumi\u00E8re");
+		} else if (ModCoolModVariables.MapVariables.get(world).Polyvalent_Scepter_Score == 3) {
+			ModCoolMod.LOGGER.info("lumi\u00E8re et ombre");
+		}
+	}
 }
