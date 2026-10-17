@@ -9,13 +9,9 @@
     "customProperties": {},
     "states": [],
     "animations": [],
-    "name": "Shadow sample",
-    "rarity": "UNCOMMON",
-    "creativeTabs": [
-      {
-        "value": "MATERIALS"
-      }
-    ],
+    "name": "Darkness Pellet",
+    "rarity": "COMMON",
+    "creativeTabs": [],
     "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,
@@ -44,9 +40,6 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 99,
-    "onRightClickedInAir": {
-      "name": "Shadow_score"
-    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,

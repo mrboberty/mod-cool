@@ -9,8 +9,8 @@
     "customProperties": {},
     "states": [],
     "animations": [],
-    "name": "Light Sample",
-    "rarity": "UNCOMMON",
+    "name": "Light Pellet",
+    "rarity": "COMMON",
     "creativeTabs": [
       {
         "value": "MATERIALS"
@@ -44,9 +44,6 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 99,
-    "onRightClickedInAir": {
-      "name": "Light_score"
-    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,

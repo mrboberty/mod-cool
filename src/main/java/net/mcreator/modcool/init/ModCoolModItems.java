@@ -17,10 +17,10 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.modcool.item.TheRealmItem;
-import net.mcreator.modcool.item.ShadowsampleItem;
 import net.mcreator.modcool.item.PolyvalentScepterItem;
-import net.mcreator.modcool.item.LightSampleItem;
+import net.mcreator.modcool.item.LightPelletItem;
 import net.mcreator.modcool.item.LightEssenceItem;
+import net.mcreator.modcool.item.DarknessPelletItem;
 import net.mcreator.modcool.ModCoolMod;
 
 @EventBusSubscriber
@@ -28,21 +28,21 @@ public class ModCoolModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(ModCoolMod.MODID);
 	public static final DeferredItem<Item> LIGHT_GRASS;
 	public static final DeferredItem<Item> LIGHT_GROUND;
-	public static final DeferredItem<Item> SHADOWSAMPLE;
-	public static final DeferredItem<Item> LIGHT_SAMPLE;
-	public static final DeferredItem<Item> POLYVALENT_SCEPTER;
 	public static final DeferredItem<Item> THE_REALM;
 	public static final DeferredItem<Item> LIGHT_ESSENCE_BUCKET;
 	public static final DeferredItem<Item> FRACTURED_LOG;
+	public static final DeferredItem<Item> POLYVALENT_SCEPTER;
+	public static final DeferredItem<Item> LIGHT_PELLET;
+	public static final DeferredItem<Item> DARKNESS_PELLET;
 	static {
 		LIGHT_GRASS = block(ModCoolModBlocks.LIGHT_GRASS);
 		LIGHT_GROUND = block(ModCoolModBlocks.LIGHT_GROUND);
-		SHADOWSAMPLE = REGISTRY.register("shadowsample", ShadowsampleItem::new);
-		LIGHT_SAMPLE = REGISTRY.register("light_sample", LightSampleItem::new);
-		POLYVALENT_SCEPTER = REGISTRY.register("polyvalent_scepter", PolyvalentScepterItem::new);
 		THE_REALM = REGISTRY.register("the_realm", TheRealmItem::new);
 		LIGHT_ESSENCE_BUCKET = REGISTRY.register("light_essence_bucket", LightEssenceItem::new);
 		FRACTURED_LOG = block(ModCoolModBlocks.FRACTURED_LOG);
+		POLYVALENT_SCEPTER = REGISTRY.register("polyvalent_scepter", PolyvalentScepterItem::new);
+		LIGHT_PELLET = REGISTRY.register("light_pellet", LightPelletItem::new);
+		DARKNESS_PELLET = REGISTRY.register("darkness_pellet", DarknessPelletItem::new);
 	}
 
 	// Start of user code block custom items

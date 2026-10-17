@@ -2,43 +2,15 @@
   "_fv": 85,
   "_type": "item",
   "definition": {
-    "renderType": 3,
-    "texture": "scepter_texture",
-    "customModelName": "ModelScepterMagic",
-    "guiTexture": "polyvalent_scepter_icon",
+    "renderType": 0,
+    "texture": "polyvalent_scepter_icon",
+    "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
-    "animations": [
-      {
-        "animation": {
-          "value": "CUSTOM:PolyvalentScepterAnimation.idle_none"
-        },
-        "speed": 1.0,
-        "condition": {
-          "name": "PolyvalentScepterPlaybackCondition"
-        }
-      },
-      {
-        "animation": {
-          "value": "CUSTOM:PolyvalentScepterAnimation.idle_dark"
-        },
-        "speed": 1.0,
-        "condition": {
-          "name": "PolyvalentScepterDarkPlaybackCondition"
-        }
-      },
-      {
-        "animation": {
-          "value": "CUSTOM:PolyvalentScepterAnimation.idle_light"
-        },
-        "speed": 1.0,
-        "condition": {
-          "name": "PolyvalentScepterLightPlaybackCondition"
-        }
-      }
-    ],
+    "animations": [],
     "name": "Polyvalent Scepter",
-    "rarity": "EPIC",
+    "rarity": "COMMON",
     "creativeTabs": [
       {
         "value": "COMBAT"
@@ -62,9 +34,7 @@
     "damageVsEntity": 4.0,
     "attackSpeed": 1.2,
     "specialInformation": {
-      "fixedValue": [
-        "Shift + Right click to switch modes (must have a sample in inventory)"
-      ]
+      "fixedValue": []
     },
     "glowCondition": {
       "fixedValue": false

@@ -1,9 +1,6 @@
 {
   "item.mod_cool.baboum": "Baboum",
   "item.mod_cool.pop": "Pop",
-  "item.mod_cool.polyvalent_scepter": "Polyvalent Scepter",
-  "item.mod_cool.shadowsample": "Shadow sample",
-  "item.mod_cool.light_sample": "Light Sample",
   "item.mod_cool.the_realm": "The Realm Portal Igniter",
   "block.mod_cool.light_ground": "Light Ground",
   "block.mod_cool.light_grass": "Light Grass",
@@ -12,5 +9,7 @@
   "block.mod_cool.light_essence": "Light Essence",
   "fluid_type.mod_cool.light_essence": "Light Essence",
   "block.mod_cool.fractured_log": "Fractured Log",
-  "item.mod_cool.polyvalent_scepter.description_0": "Shift + Right click to switch modes (must have a sample in inventory)"
+  "item.mod_cool.polyvalent_scepter": "Polyvalent Scepter",
+  "item.mod_cool.light_pellet": "Light Pellet",
+  "item.mod_cool.darkness_pellet": "Darkness Pellet"
 }
