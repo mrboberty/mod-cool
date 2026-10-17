@@ -7,10 +7,10 @@
   "item.mod_cool.the_realm": "The Realm Portal Igniter",
   "block.mod_cool.light_ground": "Light Ground",
   "block.mod_cool.light_grass": "Light Grass",
-  "key.mod_cool.changementdechantillon": "sample change",
   "item.mod_cool.light_essence_bucket": "Light Essence Bucket",
   "fluid.mod_cool.light_essence": "Light Essence",
   "block.mod_cool.light_essence": "Light Essence",
   "fluid_type.mod_cool.light_essence": "Light Essence",
-  "block.mod_cool.fractured_log": "Fractured Log"
+  "block.mod_cool.fractured_log": "Fractured Log",
+  "item.mod_cool.polyvalent_scepter.description_0": "Shift + Right click to switch modes (must have a sample in inventory)"
 }

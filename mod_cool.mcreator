@@ -60,29 +60,6 @@
       "path": "~/LightWorld"
     },
     {
-      "name": "Light_score",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "light_score",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/modcool/procedures/Light_scoreProcedure.java"
-        ]
-      },
-      "path": "~/PolyvalentScepter"
-    },
-    {
       "name": "Shadowsample",
       "type": "item",
       "compiles": true,
@@ -111,29 +88,6 @@
       "path": "~/PolyvalentScepter"
     },
     {
-      "name": "Shadow_score",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "shadow_score",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/modcool/procedures/Shadow_scoreProcedure.java"
-        ]
-      },
-      "path": "~/PolyvalentScepter"
-    },
-    {
       "name": "PolyvalentScepter",
       "type": "item",
       "compiles": true,
@@ -144,179 +98,6 @@
           "src/main/resources/assets/mod_cool/models/item/polyvalent_scepter.json",
           "src/main/java/net/mcreator/modcool/client/renderer/item/PolyvalentScepterItemRenderer.java",
           "src/main/java/net/mcreator/modcool/item/PolyvalentScepterItem.java"
-        ]
-      },
-      "path": "~/PolyvalentScepter"
-    },
-    {
-      "name": "Teste",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "teste",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/modcool/procedures/TesteProcedure.java"
-        ]
-      },
-      "path": "~/PolyvalentScepter"
-    },
-    {
-      "name": "Scorepolyvalent0",
-      "type": "command",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "scorepolyvalent_0",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/modcool/command/Scorepolyvalent0Command.java"
-        ]
-      },
-      "path": "~/PolyvalentScepter"
-    },
-    {
-      "name": "Definira0testeab",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "definira_0testeab",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/modcool/procedures/Definira0testeabProcedure.java"
-        ]
-      },
-      "path": "~/PolyvalentScepter"
-    },
-    {
-      "name": "Detecteechantillon",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "detecteechantillon",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/modcool/procedures/DetecteechantillonProcedure.java"
-        ]
-      },
-      "path": "~/PolyvalentScepter"
-    },
-    {
-      "name": "Lancement_des_echantiollon",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lancement_des_echantiollon",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/modcool/procedures/Lancement_des_echantiollonProcedure.java"
-        ]
-      },
-      "path": "~/PolyvalentScepter"
-    },
-    {
-      "name": "Changementdechantillon",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "changementdechantillon",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/modcool/network/ChangementdechantillonMessage.java"
-        ]
-      },
-      "path": "~/PolyvalentScepter"
-    },
-    {
-      "name": "Polyvalentaba0",
-      "type": "command",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "polyvalentaba_0",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/modcool/command/Polyvalentaba0Command.java"
-        ]
-      },
-      "path": "~/PolyvalentScepter"
-    },
-    {
-      "name": "Definira0",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "definira_0",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/modcool/procedures/Definira0Procedure.java"
-        ]
-      },
-      "path": "~/PolyvalentScepter"
-    },
-    {
-      "name": "Sample_change_touche",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sample_change_touche",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/modcool/procedures/Sample_change_toucheProcedure.java"
         ]
       },
       "path": "~/PolyvalentScepter"
@@ -378,22 +159,92 @@
         ]
       },
       "path": "~/LightWorld"
-    }
-  ],
-  "variable_elements": [
-    {
-      "name": "Polyvalent_Scepter_Score",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
     },
     {
-      "name": "Polyvalent_Scepter_A_B",
-      "type": "number",
-      "scope": "player_persistent",
-      "value": "0.0"
+      "name": "PolyvalentScepterPlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polyvalent_scepter_playback_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/modcool/procedures/PolyvalentScepterPlaybackConditionProcedure.java"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "PolyvalentScepterDarkPlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polyvalent_scepter_dark_playback_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/modcool/procedures/PolyvalentScepterDarkPlaybackConditionProcedure.java"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "PolyvalentScepterLightPlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polyvalent_scepter_light_playback_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/modcool/procedures/PolyvalentScepterLightPlaybackConditionProcedure.java"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "PolyvalentScepterRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polyvalent_scepter_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/modcool/procedures/PolyvalentScepterRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
     }
   ],
+  "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:overworld_carver_replaceables": [
@@ -423,24 +274,22 @@
       "item.mod_cool.the_realm": "The Realm Portal Igniter",
       "block.mod_cool.light_ground": "Light Ground",
       "block.mod_cool.light_grass": "Light Grass",
-      "key.mod_cool.changementdechantillon": "sample change",
       "item.mod_cool.light_essence_bucket": "Light Essence Bucket",
       "fluid.mod_cool.light_essence": "Light Essence",
       "block.mod_cool.light_essence": "Light Essence",
       "fluid_type.mod_cool.light_essence": "Light Essence",
-      "block.mod_cool.fractured_log": "Fractured Log"
+      "block.mod_cool.fractured_log": "Fractured Log",
+      "item.mod_cool.polyvalent_scepter.description_0": "Shift + Right click to switch modes (must have a sample in inventory)"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/modcool/init/ModCoolModFluidTypes.java",
       "src/main/java/net/mcreator/modcool/init/ModCoolModFluids.java",
-      "src/main/java/net/mcreator/modcool/init/ModCoolModKeyMappings.java",
       "src/main/java/net/mcreator/modcool/init/ModCoolModBlocks.java",
       "src/main/java/net/mcreator/modcool/init/ModCoolModItems.java",
       "src/main/java/net/mcreator/modcool/network/PlayPlayerAnimationMessage.java",
       "src/main/java/net/mcreator/modcool/mixin/CameraAccessor.java",
-      "src/main/java/net/mcreator/modcool/network/ModCoolModVariables.java",
       "src/main/java/net/mcreator/modcool/mixin/ItemInHandLayerMixin.java",
       "src/main/java/net/mcreator/modcool/ModCoolModPlayerAnimationAPI.java",
       "src/main/java/net/mcreator/modcool/init/ModCoolModTabs.java",
@@ -460,7 +309,7 @@
       "src/main/java/net/mcreator/modcool/init/ModCoolModModels.java"
     ],
     "betteranimations_models": {
-      "PolyvalentScepter": "scepter_display:default"
+      "PolyvalentScepter": "scepter1_display:default"
     },
     "betteranimations_perspectives": {
       "PolyvalentScepter": "All perspectives"

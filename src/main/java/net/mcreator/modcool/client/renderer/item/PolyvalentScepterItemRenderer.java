@@ -29,6 +29,9 @@ import net.minecraft.client.model.HierarchicalModel;
 import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.modcool.procedures.PolyvalentScepterPlaybackConditionProcedure;
+import net.mcreator.modcool.procedures.PolyvalentScepterLightPlaybackConditionProcedure;
+import net.mcreator.modcool.procedures.PolyvalentScepterDarkPlaybackConditionProcedure;
 import net.mcreator.modcool.init.ModCoolModItems;
 import net.mcreator.modcool.client.model.animations.PolyvalentScepterAnimation;
 import net.mcreator.modcool.client.model.ModelPolyvalentScepter;
@@ -50,7 +53,7 @@ public class PolyvalentScepterItemRenderer extends BlockEntityWithoutLevelRender
 	private final ItemStack transformSource;
 	private final Map<Integer, EntityModel<?>> models = new HashMap<>();
 	private final long start;
-	private final ResourceLocation DEFAULT_TEXTURE = ResourceLocation.parse("minecraft:textures/item/breeze_rod.png");
+	private final ResourceLocation DEFAULT_TEXTURE = ResourceLocation.parse("mod_cool:textures/item/scepter_texture.png");
 
 	public PolyvalentScepterItemRenderer(BlockEntityRenderDispatcher blockEntityRenderDispatcher, EntityModelSet entityModelSet) {
 		super(blockEntityRenderDispatcher, entityModelSet);
@@ -106,21 +109,15 @@ public class PolyvalentScepterItemRenderer extends BlockEntityWithoutLevelRender
 	private static final Map<ItemStack, Map<Integer, AnimationState>> CACHE = new WeakHashMap<>();
 
 	private static Map<Integer, AnimationState> getAnimationState(ItemStack stack) {
-		return CACHE.computeIfAbsent(stack, s -> IntStream.range(0, 1).boxed().collect(Collectors.toMap(i -> i, i -> new AnimationState(), (a, b) -> b)));
+		return CACHE.computeIfAbsent(stack, s -> IntStream.range(0, 3).boxed().collect(Collectors.toMap(i -> i, i -> new AnimationState(), (a, b) -> b)));
 	}
 
 	private void updateRenderState(ItemStack itemstack) {
 		int tickCount = (int) (System.currentTimeMillis() - start) / 50;
 		updateAnimation(itemstack, tickCount);
-		if (getAnimationState(itemstack).get(0).isStarted()) {
-			float elapsedSeconds = getAnimationState(itemstack).get(0).getAccumulatedTime() / 1000.0F;
-			if (elapsedSeconds >= PolyvalentScepterAnimation.idle_none.lengthInSeconds()) {
-				if (!PolyvalentScepterAnimation.idle_none.looping())
-					getAnimationState(itemstack).get(0).stop();
-				else
-					getAnimationState(itemstack).get(0).start(tickCount);
-			}
-		}
+		getAnimationState(itemstack).get(0).animateWhen(PolyvalentScepterPlaybackConditionProcedure.execute(itemstack), tickCount);
+		getAnimationState(itemstack).get(1).animateWhen(PolyvalentScepterDarkPlaybackConditionProcedure.execute(itemstack), tickCount);
+		getAnimationState(itemstack).get(2).animateWhen(PolyvalentScepterLightPlaybackConditionProcedure.execute(itemstack), tickCount);
 	}
 
 	private void updateAnimation(ItemStack itemstack, int tickCount) {
@@ -132,8 +129,20 @@ public class PolyvalentScepterItemRenderer extends BlockEntityWithoutLevelRender
 				case -1 :
 					getAnimationState(itemstack).get(0).stop();
 					break;
+				case -2 :
+					getAnimationState(itemstack).get(1).stop();
+					break;
+				case -3 :
+					getAnimationState(itemstack).get(2).stop();
+					break;
 				case 0 :
 					getAnimationState(itemstack).get(0).start(tickCount);
+					break;
+				case 1 :
+					getAnimationState(itemstack).get(1).start(tickCount);
+					break;
+				case 2 :
+					getAnimationState(itemstack).get(2).start(tickCount);
 					break;
 			}
 			CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putInt("oldAnimState", newAnim));
@@ -148,7 +157,7 @@ public class PolyvalentScepterItemRenderer extends BlockEntityWithoutLevelRender
 			for (Map.Entry<ItemStack, Map<Integer, AnimationState>> entry : CACHE.entrySet()) {
 				ItemStack itemstack = entry.getKey();
 				CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putInt("oldAnimState", itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getInt("animState")));
-				for (int i = 0; i < 1; i++) {
+				for (int i = 0; i < 3; i++) {
 					getAnimationState(itemstack).get(i).stop();
 				}
 				init = true;
@@ -193,6 +202,8 @@ public class PolyvalentScepterItemRenderer extends BlockEntityWithoutLevelRender
 			public void setupItemStackAnim(ItemStack itemstack, float ageInTicks) {
 				animator.root().getAllParts().forEach(ModelPart::resetPose);
 				animator.animate(getAnimationState(itemstack).get(0), PolyvalentScepterAnimation.idle_none, ageInTicks, 1f);
+				animator.animate(getAnimationState(itemstack).get(1), PolyvalentScepterAnimation.idle_dark, ageInTicks, 1f);
+				animator.animate(getAnimationState(itemstack).get(2), PolyvalentScepterAnimation.idle_light, ageInTicks, 1f);
 			}
 		}
 	}

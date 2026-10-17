@@ -4,20 +4,26 @@ import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsE
 import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.network.chat.Component;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.modcool.procedures.Lancement_des_echantiollonProcedure;
+import net.mcreator.modcool.procedures.PolyvalentScepterRightclickedProcedure;
 import net.mcreator.modcool.init.ModCoolModItems;
 import net.mcreator.modcool.client.renderer.item.PolyvalentScepterItemRenderer;
+
+import java.util.List;
 
 @EventBusSubscriber
 public class PolyvalentScepterItem extends Item {
@@ -40,9 +46,16 @@ public class PolyvalentScepterItem extends Item {
 	}
 
 	@Override
+	@OnlyIn(Dist.CLIENT)
+	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, context, list, flag);
+		list.add(Component.translatable("item.mod_cool.polyvalent_scepter.description_0"));
+	}
+
+	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		Lancement_des_echantiollonProcedure.execute(entity);
+		PolyvalentScepterRightclickedProcedure.execute(entity, ar.getObject());
 		return ar;
 	}
 

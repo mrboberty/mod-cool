@@ -2,7 +2,7 @@
   "gui_light": "front",
   "parent": "builtin/entity",
   "textures": {
-    "layer0": "minecraft:item/breeze_rod"
+    "layer0": "mod_cool:item/scepter_texture"
   },
   "display": {
     "thirdperson_righthand": {

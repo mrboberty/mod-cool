@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 3,
-    "texture": "minecraft:breeze_rod",
+    "texture": "scepter_texture",
     "customModelName": "ModelPolyvalentScepter",
     "guiTexture": "",
     "customProperties": {},
@@ -13,7 +13,28 @@
         "animation": {
           "value": "CUSTOM:PolyvalentScepterAnimation.idle_none"
         },
-        "speed": 1.0
+        "speed": 1.0,
+        "condition": {
+          "name": "PolyvalentScepterPlaybackCondition"
+        }
+      },
+      {
+        "animation": {
+          "value": "CUSTOM:PolyvalentScepterAnimation.idle_dark"
+        },
+        "speed": 1.0,
+        "condition": {
+          "name": "PolyvalentScepterDarkPlaybackCondition"
+        }
+      },
+      {
+        "animation": {
+          "value": "CUSTOM:PolyvalentScepterAnimation.idle_light"
+        },
+        "speed": 1.0,
+        "condition": {
+          "name": "PolyvalentScepterLightPlaybackCondition"
+        }
       }
     ],
     "name": "Polyvalent Scepter",
@@ -41,7 +62,9 @@
     "damageVsEntity": 4.0,
     "attackSpeed": 1.2,
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "Shift + Right click to switch modes (must have a sample in inventory)"
+      ]
     },
     "glowCondition": {
       "fixedValue": false
@@ -52,7 +75,7 @@
     "inventorySize": 9,
     "inventoryStackSize": 99,
     "onRightClickedInAir": {
-      "name": "Lancement_des_echantiollon"
+      "name": "PolyvalentScepterRightclicked"
     },
     "enableRanged": false,
     "shootConstantly": false,
