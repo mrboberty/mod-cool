@@ -265,8 +265,12 @@
       "~CUSTOM:LightGrass",
       "~CUSTOM:LightGround"
     ],
-    "BLOCKS:minecraft:replaceable": [],
-    "BLOCKS:minecraft:mineable/axe": [],
+    "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:LightEssence"
+    ],
+    "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:FracturedLog"
+    ],
     "BLOCKS:minecraft:mineable/shovel": [
       "~CUSTOM:LightGround",
       "~CUSTOM:LightGrass"

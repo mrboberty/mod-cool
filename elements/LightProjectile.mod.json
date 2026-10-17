@@ -21,6 +21,9 @@
     "modelHeight": 0.5,
     "onHitsEntity": {
       "name": "LightProjectileProjectileHitsLivingEntity"
+    },
+    "onFlyingTick": {
+      "name": "LightProjectileWhileProjectileFlyingTick"
     }
   }
 }
