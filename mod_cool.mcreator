@@ -130,55 +130,61 @@
       "path": "~/PolyvalentScepter"
     },
     {
-      "name": "Lancement_des_echantiollon",
-      "type": "procedure",
+      "name": "Scorepolyvalent0",
+      "type": "command",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "lancement_des_echantiollon",
+      "registry_name": "scorepolyvalent_0",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
         "files": [
-          "src/main/java/net/mcreator/modcool/procedures/Lancement_des_echantiollonProcedure.java"
+          "src/main/java/net/mcreator/modcool/command/Scorepolyvalent0Command.java"
         ]
       },
       "path": "~/PolyvalentScepter"
     },
     {
-      "name": "Sample_change_touche",
+      "name": "Definira0testeab",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "sample_change_touche",
+      "registry_name": "definira_0testeab",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/modcool/procedures/Definira0testeabProcedure.java"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "Detecteechantillon",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "detecteechantillon",
       "metadata": {
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
           {
             "name": "world",
             "type": "world"
           }
         ],
         "files": [
-          "src/main/java/net/mcreator/modcool/procedures/Sample_change_toucheProcedure.java"
+          "src/main/java/net/mcreator/modcool/procedures/DetecteechantillonProcedure.java"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "Lancement_des_echantiollon",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lancement_des_echantiollon",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/modcool/procedures/Lancement_des_echantiollonProcedure.java"
         ]
       },
       "path": "~/PolyvalentScepter"
@@ -197,24 +203,14 @@
       "path": "~/PolyvalentScepter"
     },
     {
-      "name": "Detecteechantillon",
-      "type": "procedure",
+      "name": "Polyvalentaba0",
+      "type": "command",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "detecteechantillon",
+      "registry_name": "polyvalentaba_0",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
         "files": [
-          "src/main/java/net/mcreator/modcool/procedures/DetecteechantillonProcedure.java"
+          "src/main/java/net/mcreator/modcool/command/Polyvalentaba0Command.java"
         ]
       },
       "path": "~/PolyvalentScepter"
@@ -239,49 +235,94 @@
       "path": "~/PolyvalentScepter"
     },
     {
-      "name": "Scorepolyvalent0",
-      "type": "command",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "scorepolyvalent_0",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/modcool/command/Scorepolyvalent0Command.java"
-        ]
-      },
-      "path": "~/PolyvalentScepter"
-    },
-    {
-      "name": "Polyvalentaba0",
-      "type": "command",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "polyvalentaba_0",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/modcool/command/Polyvalentaba0Command.java"
-        ]
-      },
-      "path": "~/PolyvalentScepter"
-    },
-    {
-      "name": "Definira0testeab",
+      "name": "Sample_change_touche",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "definira_0testeab",
+      "registry_name": "sample_change_touche",
       "metadata": {
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
-          "src/main/java/net/mcreator/modcool/procedures/Definira0testeabProcedure.java"
+          "src/main/java/net/mcreator/modcool/procedures/Sample_change_toucheProcedure.java"
         ]
       },
       "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "LightGrass",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_grass",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mod_cool/blockstates/light_grass.json",
+          "src/main/java/net/mcreator/modcool/block/LightGrassBlock.java",
+          "src/main/resources/assets/mod_cool/models/item/light_grass.json",
+          "src/main/resources/assets/mod_cool/models/block/light_grass.json"
+        ]
+      },
+      "path": "~/LightWorld"
+    },
+    {
+      "name": "LightGround",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_ground",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mod_cool/blockstates/light_ground.json",
+          "src/main/resources/data/mod_cool/loot_table/blocks/light_ground.json",
+          "src/main/resources/assets/mod_cool/models/item/light_ground.json",
+          "src/main/resources/assets/mod_cool/models/block/light_ground.json",
+          "src/main/java/net/mcreator/modcool/block/LightGroundBlock.java"
+        ]
+      },
+      "path": "~/LightWorld"
+    },
+    {
+      "name": "LitUpFields",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lit_up_fields",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mod_cool/worldgen/biome/lit_up_fields.json"
+        ]
+      },
+      "path": "~/LightWorld"
+    },
+    {
+      "name": "LightGrassLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_grass_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mod_cool/loot_table/blocks/the_realm.json"
+        ]
+      },
+      "path": "~/LightWorld"
     }
   ],
   "variable_elements": [
@@ -310,15 +351,13 @@
       "item.mod_cool.baboum": "Baboum",
       "item.mod_cool.pop": "Pop",
       "item.mod_cool.the_realm": "The Realm Portal Igniter",
-      "item.mod_cool.polyvalent_scepter": "Polyvalent Scepter",
       "item.mod_cool.shadowsample": "Shadow sample",
       "item.mod_cool.light_sample": "Light Sample",
-      "key.mod_cool.changementdechantillon": "sample change"
+      "item.mod_cool.polyvalent_scepter": "Polyvalent Scepter"
     }
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/modcool/init/ModCoolModKeyMappings.java",
       "src/main/java/net/mcreator/modcool/init/ModCoolModBlocks.java",
       "src/main/java/net/mcreator/modcool/init/ModCoolModItems.java",
       "src/main/java/net/mcreator/modcool/mixin/PlayerAnimationMixin.java",
@@ -345,6 +384,10 @@
   "foldersRoot": {
     "name": "~",
     "children": [
+      {
+        "name": "LightWorld",
+        "children": []
+      },
       {
         "name": "PolyvalentScepter",
         "children": []

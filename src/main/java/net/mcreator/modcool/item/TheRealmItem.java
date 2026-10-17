@@ -1,17 +1,7 @@
 package net.mcreator.modcool.item;
 
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.context.UseOnContext;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.InteractionResult;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.modcool.block.TheRealmPortalBlock;
-
 public class TheRealmItem extends Item {
+
 	public TheRealmItem() {
 		super(new Item.Properties()
 
@@ -31,11 +21,13 @@ public class TheRealmItem extends Item {
 			int y = pos.getY();
 			int z = pos.getZ();
 			boolean success = false;
+
 			if (world.isEmptyBlock(pos) && true) {
 				TheRealmPortalBlock.portalSpawn(world, pos);
 				itemstack.hurtAndBreak(1, entity, LivingEntity.getSlotForHand(context.getHand()));
 				success = true;
 			}
+
 			return success ? InteractionResult.SUCCESS : InteractionResult.FAIL;
 		}
 	}

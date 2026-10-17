@@ -6,7 +6,7 @@
       "type": "minecraft:multi_noise",
       "biomes": [
         {
-          "biome": "plains",
+          "biome": "mod_cool:lit_up_fields",
           "parameters": {
             "temperature": 0,
             "humidity": 0,
@@ -360,7 +360,7 @@
             "if_true": {
               "type": "minecraft:biome",
               "biome_is": [
-                "plains"
+                "mod_cool:lit_up_fields"
               ]
             },
             "then_run": {
@@ -394,17 +394,14 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:grass_block",
-                              "Properties": {
-                                "snowy": "false"
-                              }
+                              "Name": "mod_cool:light_grass"
                             }
                           }
                         },
                         {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "minecraft:gravel"
+                            "Name": "mod_cool:light_ground"
                           }
                         }
                       ]
@@ -422,7 +419,7 @@
                     "then_run": {
                       "type": "minecraft:block",
                       "result_state": {
-                        "Name": "minecraft:dirt"
+                        "Name": "mod_cool:light_ground"
                       }
                     }
                   }
