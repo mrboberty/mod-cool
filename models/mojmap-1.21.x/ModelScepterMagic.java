@@ -2,11 +2,11 @@
 // Exported for Minecraft version 1.17 or later with Mojang mappings
 // Paste this class into your mod and generate all required imports
 
-public class ModelPolyvalentScepter<T extends Entity> extends EntityModel<T> {
+public class ModelScepterMagic<T extends Entity> extends EntityModel<T> {
 	// This layer location should be baked with EntityRendererProvider.Context in
 	// the entity renderer and passed into this model's constructor
 	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(
-			new ResourceLocation("modid", "polyvalentscepter"), "main");
+			new ResourceLocation("modid", "sceptermagic"), "main");
 	private final ModelPart Handle;
 	private final ModelPart bone;
 	private final ModelPart bone2;
@@ -15,7 +15,7 @@ public class ModelPolyvalentScepter<T extends Entity> extends EntityModel<T> {
 	private final ModelPart darknesscube;
 	private final ModelPart lightcube;
 
-	public ModelPolyvalentScepter(ModelPart root) {
+	public ModelScepterMagic(ModelPart root) {
 		this.Handle = root.getChild("Handle");
 		this.bone = this.Handle.getChild("bone");
 		this.bone2 = this.Handle.getChild("bone2");
@@ -36,37 +36,17 @@ public class ModelPolyvalentScepter<T extends Entity> extends EntityModel<T> {
 						.addBox(-1.5F, -5.0F, -1.5F, 3.0F, 5.0F, 3.0F, new CubeDeformation(0.0F)),
 				PartPose.offset(0.0F, 24.0F, 0.0F));
 
-		PartDefinition bone = Handle.addOrReplaceChild("bone", CubeListBuilder.create(),
-				PartPose.offset(0.0F, -23.0F, 0.0F));
+		PartDefinition bone = Handle.addOrReplaceChild("bone", CubeListBuilder.create().texOffs(0, 0).addBox(0.0F,
+				-9.0F, -7.0F, 0.0F, 10.0F, 7.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, -23.0F, 0.0F));
 
-		PartDefinition cube_r1 = bone.addOrReplaceChild("cube_r1",
-				CubeListBuilder.create().texOffs(0, 0).addBox(0.0F, -5.0F, -3.5F, 0.0F, 10.0F, 7.0F,
-						new CubeDeformation(0.0F)),
-				PartPose.offsetAndRotation(0.0F, -4.0F, -3.75F, 0.1309F, 0.0F, 0.0F));
+		PartDefinition bone2 = Handle.addOrReplaceChild("bone2", CubeListBuilder.create().texOffs(14, 0).addBox(0.0F,
+				-9.0F, 0.0F, 0.0F, 10.0F, 7.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, -23.0F, 0.0F));
 
-		PartDefinition bone2 = Handle.addOrReplaceChild("bone2", CubeListBuilder.create(),
-				PartPose.offset(0.0F, -23.0F, 0.0F));
+		PartDefinition bone3 = Handle.addOrReplaceChild("bone3", CubeListBuilder.create().texOffs(6, 7).addBox(1.0F,
+				-9.0F, 0.0F, 7.0F, 10.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, -23.0F, 0.0F));
 
-		PartDefinition cube_r2 = bone2.addOrReplaceChild("cube_r2",
-				CubeListBuilder.create().texOffs(14, 0).addBox(0.0F, -5.0F, -3.5F, 0.0F, 10.0F, 7.0F,
-						new CubeDeformation(0.0F)),
-				PartPose.offsetAndRotation(0.0F, -4.0F, 4.0F, -0.1309F, 0.0F, 0.0F));
-
-		PartDefinition bone3 = Handle.addOrReplaceChild("bone3", CubeListBuilder.create(),
-				PartPose.offset(0.0F, -23.0F, 0.0F));
-
-		PartDefinition cube_r3 = bone3.addOrReplaceChild("cube_r3",
-				CubeListBuilder.create().texOffs(0, 17).addBox(0.0F, -5.0F, -3.5F, 0.0F, 10.0F, 7.0F,
-						new CubeDeformation(0.0F)),
-				PartPose.offsetAndRotation(3.875F, -4.0F, 0.125F, 0.0F, -1.5708F, 0.1309F));
-
-		PartDefinition bone4 = Handle.addOrReplaceChild("bone4", CubeListBuilder.create(),
-				PartPose.offset(0.0F, -23.0F, 0.0F));
-
-		PartDefinition cube_r4 = bone4.addOrReplaceChild("cube_r4",
-				CubeListBuilder.create().texOffs(14, 17).addBox(0.0F, -5.0F, -3.5F, 0.0F, 10.0F, 7.0F,
-						new CubeDeformation(0.0F)),
-				PartPose.offsetAndRotation(-3.875F, -4.0F, 0.125F, 0.0F, -1.5708F, -0.1309F));
+		PartDefinition bone4 = Handle.addOrReplaceChild("bone4", CubeListBuilder.create().texOffs(12, 7).addBox(-9.0F,
+				-9.0F, 0.0F, 7.0F, 10.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, -23.0F, 0.0F));
 
 		PartDefinition darknesscube = Handle.addOrReplaceChild("darknesscube", CubeListBuilder.create().texOffs(28, 19)
 				.addBox(-2.0F, -2.0F, -2.0F, 4.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)),

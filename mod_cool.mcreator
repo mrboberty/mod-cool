@@ -309,7 +309,7 @@
       "src/main/java/net/mcreator/modcool/init/ModCoolModModels.java"
     ],
     "betteranimations_models": {
-      "PolyvalentScepter": "scepter1_display:default"
+      "PolyvalentScepter": "sceptermagicdisplaysettings:default"
     },
     "betteranimations_perspectives": {
       "PolyvalentScepter": "All perspectives"

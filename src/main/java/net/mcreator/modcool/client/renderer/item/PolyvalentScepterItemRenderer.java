@@ -34,7 +34,7 @@ import net.mcreator.modcool.procedures.PolyvalentScepterLightPlaybackConditionPr
 import net.mcreator.modcool.procedures.PolyvalentScepterDarkPlaybackConditionProcedure;
 import net.mcreator.modcool.init.ModCoolModItems;
 import net.mcreator.modcool.client.model.animations.PolyvalentScepterAnimation;
-import net.mcreator.modcool.client.model.ModelPolyvalentScepter;
+import net.mcreator.modcool.client.model.ModelScepterMagic;
 import net.mcreator.modcool.client.ItemArms;
 
 import java.util.stream.IntStream;
@@ -60,7 +60,7 @@ public class PolyvalentScepterItemRenderer extends BlockEntityWithoutLevelRender
 		this.entityModelSet = entityModelSet;
 		this.transformSource = new ItemStack(ModCoolModItems.POLYVALENT_SCEPTER.get());
 		this.start = System.currentTimeMillis();
-		this.models.put(0, new AnimatedModel(this.entityModelSet.bakeLayer(ModelPolyvalentScepter.LAYER_LOCATION)));
+		this.models.put(0, new AnimatedModel(this.entityModelSet.bakeLayer(ModelScepterMagic.LAYER_LOCATION)));
 	}
 
 	@Override
@@ -175,7 +175,7 @@ public class PolyvalentScepterItemRenderer extends BlockEntityWithoutLevelRender
 			animated.animator.root().getAllParts().forEach(ModelPart::resetPose);
 	}
 
-	private final class AnimatedModel extends ModelPolyvalentScepter {
+	private final class AnimatedModel extends ModelScepterMagic {
 		private final ModelPart root;
 		public final BlockEntityHierarchicalModel animator = new BlockEntityHierarchicalModel();
 

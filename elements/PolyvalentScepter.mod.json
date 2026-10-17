@@ -4,8 +4,8 @@
   "definition": {
     "renderType": 3,
     "texture": "scepter_texture",
-    "customModelName": "ModelPolyvalentScepter",
-    "guiTexture": "",
+    "customModelName": "ModelScepterMagic",
+    "guiTexture": "polyvalent_scepter_icon",
     "customProperties": {},
     "states": [],
     "animations": [
