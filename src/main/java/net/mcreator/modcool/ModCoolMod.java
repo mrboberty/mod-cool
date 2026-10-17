@@ -18,6 +18,7 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.modcool.network.ModCoolModVariables;
 import net.mcreator.modcool.init.ModCoolModTabs;
 import net.mcreator.modcool.init.ModCoolModItems;
 import net.mcreator.modcool.init.ModCoolModBlocks;
@@ -45,6 +46,7 @@ public class ModCoolMod {
 		ModCoolModBlocks.REGISTRY.register(modEventBus);
 		ModCoolModItems.REGISTRY.register(modEventBus);
 		ModCoolModTabs.REGISTRY.register(modEventBus);
+		ModCoolModVariables.ATTACHMENT_TYPES.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

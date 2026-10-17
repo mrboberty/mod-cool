@@ -8,22 +8,128 @@
       "registry_name": "the_realm",
       "metadata": {
         "files": [
-          "src/main/resources/data/mod_cool/dimension/the_realm.json",
+          "src/main/resources/assets/mod_cool/blockstates/the_realm_portal.json",
           "src/main/java/net/mcreator/modcool/item/TheRealmItem.java",
           "src/main/resources/assets/mod_cool/models/block/the_realm_portal_ew.json",
-          "src/main/resources/assets/mod_cool/blockstates/the_realm_portal.json",
-          "src/main/java/net/mcreator/modcool/block/TheRealmPortalBlock.java",
-          "src/main/resources/assets/mod_cool/models/item/the_realm.json",
+          "src/main/java/net/mcreator/modcool/world/dimension/TheRealmDimension.java",
+          "src/main/java/net/mcreator/modcool/world/teleporter/TheRealmPortalShape.java",
           "src/main/resources/assets/mod_cool/models/block/the_realm_portal_ns.json",
           "src/main/java/net/mcreator/modcool/world/teleporter/TheRealmTeleporter.java",
           "src/main/resources/data/mod_cool/dimension_type/the_realm.json",
-          "src/main/java/net/mcreator/modcool/world/dimension/TheRealmDimension.java",
-          "src/main/java/net/mcreator/modcool/world/teleporter/TheRealmPortalShape.java"
+          "src/main/resources/assets/mod_cool/models/item/the_realm.json",
+          "src/main/java/net/mcreator/modcool/block/TheRealmPortalBlock.java",
+          "src/main/resources/data/mod_cool/dimension/the_realm.json"
         ]
       }
+    },
+    {
+      "name": "PolyvalentScepter",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polyvalent_scepter",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/modcool/item/PolyvalentScepterItem.java",
+          "src/main/resources/assets/mod_cool/models/item/polyvalent_scepter.json"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "Shadowsample",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shadowsample",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/modcool/item/ShadowsampleItem.java",
+          "src/main/resources/assets/mod_cool/models/item/shadowsample.json"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "LightSample",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_sample",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mod_cool/models/item/light_sample.json",
+          "src/main/java/net/mcreator/modcool/item/LightSampleItem.java"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "Shadow_score",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shadow_score",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/modcool/procedures/Shadow_scoreProcedure.java"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "Light_score",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_score",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/modcool/procedures/Light_scoreProcedure.java"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "Teste",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teste",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/modcool/procedures/TesteProcedure.java"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "Polyvalent_Scepter_Score",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    }
+  ],
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:overworld_carver_replaceables": [
@@ -35,36 +141,45 @@
     "en_us": {
       "item.mod_cool.baboum": "Baboum",
       "item.mod_cool.pop": "Pop",
-      "item.mod_cool.the_realm": "The Realm Portal Igniter"
+      "item.mod_cool.the_realm": "The Realm Portal Igniter",
+      "item.mod_cool.polyvalent_scepter": "Polyvalent Scepter",
+      "item.mod_cool.shadowsample": "Shadow sample",
+      "item.mod_cool.light_sample": "Light Sample"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/modcool/init/ModCoolModBlocks.java",
       "src/main/java/net/mcreator/modcool/init/ModCoolModItems.java",
-      "src/main/java/net/mcreator/modcool/network/PlayPlayerAnimationMessage.java",
-      "src/main/java/net/mcreator/modcool/mixin/CameraAccessor.java",
-      "src/main/java/net/mcreator/modcool/mixin/ItemInHandLayerMixin.java",
-      "src/main/java/net/mcreator/modcool/ModCoolModPlayerAnimationAPI.java",
-      "src/main/java/net/mcreator/modcool/init/ModCoolModTabs.java",
-      "src/main/java/net/mcreator/modcool/client/RenderUtils.java",
-      "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/java/net/mcreator/modcool/mixin/LevelRendererMixin.java",
-      "src/main/java/net/mcreator/modcool/mixin/ItemInHandRendererMixin.java",
-      "src/main/resources/mod_cool.mixins.json",
       "src/main/java/net/mcreator/modcool/mixin/PlayerAnimationMixin.java",
-      "src/main/java/net/mcreator/modcool/mixin/EntityRenderDispatcherMixin.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/modcool/mixin/LivingEntityRendererMixin.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/modcool/mixin/PlayerAnimationRendererMixin.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/resources/mod_cool.mixins.json",
+      "src/main/java/net/mcreator/modcool/mixin/LevelRendererMixin.java",
+      "src/main/java/net/mcreator/modcool/network/ModCoolModVariables.java",
+      "src/main/java/net/mcreator/modcool/ModCoolMod.java",
+      "src/main/java/net/mcreator/modcool/mixin/EntityRenderDispatcherMixin.java",
+      "src/main/java/net/mcreator/modcool/network/PlayPlayerAnimationMessage.java",
+      "src/main/java/net/mcreator/modcool/mixin/ItemInHandRendererMixin.java",
+      "src/main/java/net/mcreator/modcool/client/RenderUtils.java",
+      "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/modcool/client/ItemArms.java",
-      "src/main/java/net/mcreator/modcool/ModCoolMod.java"
+      "src/main/java/net/mcreator/modcool/mixin/CameraAccessor.java",
+      "src/main/java/net/mcreator/modcool/init/ModCoolModTabs.java",
+      "src/main/java/net/mcreator/modcool/ModCoolModPlayerAnimationAPI.java",
+      "src/main/java/net/mcreator/modcool/mixin/ItemInHandLayerMixin.java"
     ]
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "PolyvalentScepter",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "mod_cool",

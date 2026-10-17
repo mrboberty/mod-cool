@@ -1,5 +1,8 @@
 {
   "item.mod_cool.baboum": "Baboum",
   "item.mod_cool.pop": "Pop",
-  "item.mod_cool.the_realm": "The Realm Portal Igniter"
+  "item.mod_cool.the_realm": "The Realm Portal Igniter",
+  "item.mod_cool.polyvalent_scepter": "Polyvalent Scepter",
+  "item.mod_cool.shadowsample": "Shadow sample",
+  "item.mod_cool.light_sample": "Light Sample"
 }

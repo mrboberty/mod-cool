@@ -22,6 +22,11 @@ public class ModCoolModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(ModCoolModItems.THE_REALM.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
+			tabData.accept(ModCoolModItems.POLYVALENT_SCEPTER.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+			tabData.accept(ModCoolModItems.SHADOWSAMPLE.get());
+			tabData.accept(ModCoolModItems.LIGHT_SAMPLE.get());
 		}
 	}
 }
