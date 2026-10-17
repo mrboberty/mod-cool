@@ -1,6 +1,37 @@
 {
-  "parent": "item/generated",
+  "gui_light": "front",
+  "parent": "builtin/entity",
   "textures": {
     "layer0": "minecraft:item/breeze_rod"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "translation": [
+        0,
+        -7,
+        0.75
+      ]
+    },
+    "thirdperson_lefthand": {
+      "translation": [
+        0,
+        -7,
+        0.75
+      ]
+    },
+    "firstperson_righthand": {
+      "translation": [
+        1.25,
+        -6.75,
+        -3.25
+      ]
+    },
+    "firstperson_lefthand": {
+      "translation": [
+        1.25,
+        -6.75,
+        -3.25
+      ]
+    }
   }
 }

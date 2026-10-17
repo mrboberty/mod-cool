@@ -2,13 +2,20 @@
   "_fv": 85,
   "_type": "item",
   "definition": {
-    "renderType": 0,
+    "renderType": 3,
     "texture": "minecraft:breeze_rod",
-    "customModelName": "Normal",
+    "customModelName": "ModelPolyvalentScepter",
     "guiTexture": "",
     "customProperties": {},
     "states": [],
-    "animations": [],
+    "animations": [
+      {
+        "animation": {
+          "value": "CUSTOM:PolyvalentScepterAnimation.idle_none"
+        },
+        "speed": 1.0
+      }
+    ],
     "name": "Polyvalent Scepter",
     "rarity": "EPIC",
     "creativeTabs": [
