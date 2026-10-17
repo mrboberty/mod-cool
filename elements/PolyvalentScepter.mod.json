@@ -44,6 +44,9 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 99,
+    "onRightClickedInAir": {
+      "name": "Lancement_des_echantiollon"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
