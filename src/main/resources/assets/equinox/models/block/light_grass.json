@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "equinox:block/light_ground",
+    "up": "equinox:block/light_grass_top",
+    "north": "equinox:block/light_grass",
+    "east": "equinox:block/light_grass",
+    "south": "equinox:block/light_grass",
+    "west": "equinox:block/light_grass",
+    "particle": "equinox:block/light_ground"
+  },
+  "render_type": "solid"
+}

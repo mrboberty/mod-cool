@@ -8,12 +8,14 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
-import net.mcreator.modcool.client.model.ModelPolyvalentScepter;
+import net.mcreator.equinox.client.model.Modellight_projectile;
+import net.mcreator.equinox.client.model.ModelSunkisser;
 
 @EventBusSubscriber(Dist.CLIENT)
 public class ModCoolModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
-		event.registerLayerDefinition(ModelPolyvalentScepter.LAYER_LOCATION, ModelPolyvalentScepter::createBodyLayer);
+		event.registerLayerDefinition(Modellight_projectile.LAYER_LOCATION, Modellight_projectile::createBodyLayer);
+		event.registerLayerDefinition(ModelSunkisser.LAYER_LOCATION, ModelSunkisser::createBodyLayer);
 	}
 }

@@ -1,11 +1,6 @@
 package net.mcreator.modcool.procedures;
 
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.Entity;
-
-import net.mcreator.modcool.network.ModCoolModVariables;
-import net.mcreator.modcool.init.ModCoolModItems;
+import net.neoforged.bus.api.Event;
 
 public class Light_scoreProcedure {
 	public static void execute(Entity entity) {

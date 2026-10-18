@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mod_cool:block/fractured_log_top",
+    "up": "mod_cool:block/fractured_log_top",
+    "north": "mod_cool:block/fractured_log",
+    "east": "mod_cool:block/fractured_log",
+    "south": "mod_cool:block/fractured_log",
+    "west": "mod_cool:block/fractured_log",
+    "particle": "mod_cool:block/fractured_log_top"
+  },
+  "render_type": "solid"
+}

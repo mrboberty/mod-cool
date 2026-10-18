@@ -1,28 +1,5 @@
 package net.mcreator.modcool.client.renderer.item;
 
-import net.neoforged.api.distmarker.OnlyIn;
-import net.neoforged.api.distmarker.Dist;
-
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.ItemDisplayContext;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.client.renderer.entity.ItemRenderer;
-import net.minecraft.client.renderer.blockentity.BlockEntityRenderDispatcher;
-import net.minecraft.client.renderer.MultiBufferSource;
-import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
-import net.minecraft.client.model.geom.EntityModelSet;
-import net.minecraft.client.model.EntityModel;
-
-import net.mcreator.modcool.init.ModCoolModItems;
-import net.mcreator.modcool.client.model.ModelPolyvalentScepter;
-
-import java.util.Map;
-import java.util.HashMap;
-
-import com.mojang.math.Axis;
-import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.mojang.blaze3d.vertex.PoseStack;
-
 @OnlyIn(Dist.CLIENT)
 public class PolyvalentScepterItemRenderer extends BlockEntityWithoutLevelRenderer {
 	private final EntityModelSet entityModelSet;

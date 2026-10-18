@@ -1,8 +1,6 @@
 package net.mcreator.modcool.procedures;
 
-import net.minecraft.world.entity.Entity;
-
-import net.mcreator.modcool.network.ModCoolModVariables;
+import net.neoforged.bus.api.Event;
 
 public class Definira0Procedure {
 	public static void execute(Entity entity) {

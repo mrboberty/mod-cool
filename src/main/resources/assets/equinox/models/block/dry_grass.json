@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "equinox:block/dry_ground",
+    "up": "equinox:block/dry_grass",
+    "north": "equinox:block/dry_grass_side",
+    "east": "equinox:block/dry_grass_side",
+    "south": "equinox:block/dry_grass_side",
+    "west": "equinox:block/dry_grass_side",
+    "particle": "equinox:block/dry_ground"
+  },
+  "render_type": "solid"
+}

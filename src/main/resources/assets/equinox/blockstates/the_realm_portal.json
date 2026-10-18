@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "equinox:block/the_realm_portal_ew"
+    },
+    "axis=x": {
+      "model": "equinox:block/the_realm_portal_ns"
+    }
+  }
+}

@@ -330,27 +330,197 @@
         ]
       },
       "path": "~/LightWorld"
+    },
+    {
+      "name": "LightEssence",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_essence",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/modcool/block/LightEssenceBlock.java",
+          "src/main/java/net/mcreator/modcool/fluid/types/LightEssenceFluidType.java",
+          "src/main/resources/assets/mod_cool/blockstates/light_essence.json",
+          "src/main/resources/assets/mod_cool/models/block/light_essence.json",
+          "src/main/resources/assets/mod_cool/models/item/light_essence_bucket.json",
+          "src/main/java/net/mcreator/modcool/item/LightEssenceItem.java",
+          "src/main/java/net/mcreator/modcool/fluid/LightEssenceFluid.java"
+        ]
+      },
+      "path": "~/LightWorld"
+    },
+    {
+      "name": "Equinox",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "equinox",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "LightPellet",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_pellet",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mod_cool/models/item/light_pellet.json",
+          "src/main/java/net/mcreator/modcool/item/LightPelletItem.java"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "DarknessPellet",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkness_pellet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/modcool/item/DarknessPelletItem.java",
+          "src/main/resources/assets/mod_cool/models/item/darkness_pellet.json"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "LightProjectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/modcool/entity/LightProjectileEntity.java",
+          "src/main/java/net/mcreator/modcool/client/renderer/LightProjectileRenderer.java"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "PolyvalentScepterRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polyvalent_scepter_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/modcool/procedures/PolyvalentScepterRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "LightProjectileProjectileHitsLivingEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_projectile_projectile_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/equinox/procedures/LightProjectileProjectileHitsLivingEntityProcedure.java"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "FracturedLog",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fractured_log",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mod_cool/models/block/fractured_log.json",
+          "src/main/resources/data/mod_cool/loot_table/blocks/fractured_log.json",
+          "src/main/resources/assets/mod_cool/models/item/fractured_log.json",
+          "src/main/resources/assets/mod_cool/blockstates/fractured_log.json",
+          "src/main/java/net/mcreator/modcool/block/FracturedLogBlock.java"
+        ]
+      },
+      "path": "~/LightWorld"
     }
   ],
   "variable_elements": [
     {
       "name": "Polyvalent_Scepter_Score",
       "type": "number",
-      "scope": "player_persistent",
+      "scope": "map",
       "value": "0"
-    },
-    {
-      "name": "Polyvalent_Scepter_A_B",
-      "type": "number",
-      "scope": "player_persistent",
-      "value": "0.0"
     }
   ],
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:overworld_carver_replaceables": [
       "~CUSTOM:LightGrass",
-      "~Blocks.DIRT#0",
+      "~CUSTOM:LightGround",
+      "~Blocks.DIRT#0"
+    ],
+    "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:LightEssence"
+    ],
+    "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:FracturedLog"
+    ],
+    "BLOCKS:minecraft:mineable/shovel": [
+      "~CUSTOM:LightGrass",
       "~CUSTOM:LightGround"
     ]
   },
@@ -371,13 +541,11 @@
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/modcool/init/ModCoolModKeyMappings.java",
       "src/main/java/net/mcreator/modcool/init/ModCoolModBlocks.java",
       "src/main/java/net/mcreator/modcool/init/ModCoolModItems.java",
       "src/main/java/net/mcreator/modcool/mixin/PlayerAnimationMixin.java",
       "src/main/java/net/mcreator/modcool/mixin/LivingEntityRendererMixin.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/modcool/init/ModCoolModModels.java",
       "src/main/java/net/mcreator/modcool/mixin/PlayerAnimationRendererMixin.java",
       "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/resources/mod_cool.mixins.json",
@@ -394,13 +562,7 @@
       "src/main/java/net/mcreator/modcool/init/ModCoolModTabs.java",
       "src/main/java/net/mcreator/modcool/ModCoolModPlayerAnimationAPI.java",
       "src/main/java/net/mcreator/modcool/mixin/ItemInHandLayerMixin.java"
-    ],
-    "betteranimations_models": {
-      "PolyvalentScepter": "scepter_display_1:default"
-    },
-    "betteranimations_perspectives": {
-      "PolyvalentScepter": "All perspectives"
-    }
+    ]
   },
   "foldersRoot": {
     "name": "~",

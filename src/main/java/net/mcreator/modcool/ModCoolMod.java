@@ -19,9 +19,7 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.modcool.network.ModCoolModVariables;
-import net.mcreator.modcool.init.ModCoolModTabs;
-import net.mcreator.modcool.init.ModCoolModItems;
-import net.mcreator.modcool.init.ModCoolModBlocks;
+import net.mcreator.modcool.init.*;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Queue;
@@ -45,8 +43,11 @@ public class ModCoolMod {
 		modEventBus.addListener(this::registerNetworking);
 		ModCoolModBlocks.REGISTRY.register(modEventBus);
 		ModCoolModItems.REGISTRY.register(modEventBus);
+		ModCoolModEntities.REGISTRY.register(modEventBus);
 		ModCoolModTabs.REGISTRY.register(modEventBus);
 		ModCoolModVariables.ATTACHMENT_TYPES.register(modEventBus);
+		ModCoolModFluids.REGISTRY.register(modEventBus);
+		ModCoolModFluidTypes.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

@@ -21,16 +21,19 @@
     },
     "settings": {
       "name": "mod_cool:the_realm",
-      "sea_level": 46,
+      "sea_level": 48,
       "legacy_random_source": false,
       "disable_mob_generation": false,
       "aquifers_enabled": true,
       "ore_veins_enabled": false,
       "default_block": {
-        "Name": "minecraft:dirt"
+        "Name": "mod_cool:light_ground"
       },
       "default_fluid": {
-        "Name": "minecraft:dirt"
+        "Name": "mod_cool:light_essence",
+        "Properties": {
+          "level": "0"
+        }
       },
       "spawn_target": [],
       "noise": {

@@ -1,0 +1,7 @@
+{
+  "type": "equinox:structure_feature",
+  "config": {
+    "structure": "equinox:wiggly_gras",
+    "ignored_blocks": "minecraft:air"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "type": "equinox:structure_feature",
+  "config": {
+    "structure": "equinox:floating_island1",
+    "ignored_blocks": "minecraft:air"
+  }
+}

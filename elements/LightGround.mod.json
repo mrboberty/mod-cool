@@ -52,10 +52,10 @@
     "immuneToFire": false,
     "creativeTabs": [
       {
-        "value": "DECORATIONS"
+        "value": "CUSTOM:Equinox"
       }
     ],
-    "destroyTool": "Not specified",
+    "destroyTool": "shovel",
     "customDrop": {
       "value": ""
     },

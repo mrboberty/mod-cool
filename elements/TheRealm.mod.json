@@ -5,17 +5,20 @@
     "biomesInDimension": [
       {
         "value": "CUSTOM:LitUpFields"
+      },
+      {
+        "value": "CUSTOM:DryLand"
       }
     ],
     "biomesInDimensionCaves": [],
     "worldGenType": "Normal world gen",
     "mainFillerBlock": {
-      "value": "Blocks.DIRT#0"
+      "value": "CUSTOM:LightGround"
     },
     "fluidBlock": {
-      "value": "Blocks.DIRT#0"
+      "value": "CUSTOM:LightEssence"
     },
-    "seaLevel": 46,
+    "seaLevel": 48,
     "generateOreVeins": false,
     "generateAquifers": false,
     "horizontalNoiseSize": 4,
@@ -26,7 +29,7 @@
     "cloudHeight": 192,
     "skyType": "NORMAL",
     "airColor": {
-      "value": -13210,
+      "value": -26266,
       "falpha": 0.0
     },
     "sunHeightAffectsFog": false,
@@ -64,10 +67,10 @@
     },
     "creativeTabs": [
       {
-        "value": "TOOLS"
+        "value": "CUSTOM:Equinox"
       }
     ],
-    "texture": "minecraft:blaze_rod",
+    "texture": "minecraft:acacia_boat",
     "portalTexture": "minecraft:bedrock",
     "enablePortal": true
   }
