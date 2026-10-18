@@ -31,6 +31,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/modcool/item/PolyvalentScepterItem.java",
+          "src/main/java/net/mcreator/modcool/client/renderer/item/PolyvalentScepterItemRenderer.java",
           "src/main/resources/assets/mod_cool/models/item/polyvalent_scepter.json"
         ]
       },
@@ -75,10 +76,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ],
         "files": [
@@ -98,10 +95,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ],
         "files": [
@@ -119,8 +112,8 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ],
         "files": [
@@ -149,7 +142,12 @@
       "locked_code": false,
       "registry_name": "definira_0testeab",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "files": [
           "src/main/java/net/mcreator/modcool/procedures/Definira0testeabProcedure.java"
         ]
@@ -165,8 +163,8 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ],
         "files": [
@@ -182,7 +180,12 @@
       "locked_code": false,
       "registry_name": "lancement_des_echantiollon",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "files": [
           "src/main/java/net/mcreator/modcool/procedures/Lancement_des_echantiollonProcedure.java"
         ]
@@ -224,8 +227,8 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ],
         "files": [
@@ -242,6 +245,10 @@
       "registry_name": "sample_change_touche",
       "metadata": {
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "x",
             "type": "number"
@@ -329,7 +336,7 @@
     {
       "name": "Polyvalent_Scepter_Score",
       "type": "number",
-      "scope": "map",
+      "scope": "player_persistent",
       "value": "0"
     },
     {
@@ -342,7 +349,9 @@
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:overworld_carver_replaceables": [
-      "~Blocks.DIRT#0"
+      "~CUSTOM:LightGrass",
+      "~Blocks.DIRT#0",
+      "~CUSTOM:LightGround"
     ]
   },
   "tab_element_order": {},
@@ -353,16 +362,22 @@
       "item.mod_cool.the_realm": "The Realm Portal Igniter",
       "item.mod_cool.shadowsample": "Shadow sample",
       "item.mod_cool.light_sample": "Light Sample",
-      "item.mod_cool.polyvalent_scepter": "Polyvalent Scepter"
+      "item.mod_cool.polyvalent_scepter": "Polyvalent Scepter",
+      "block.mod_cool.light_grass": "Light Grass",
+      "block.mod_cool.light_ground": "Light Ground",
+      "biome.mod_cool.lit_up_fields": "Lit Up Fields",
+      "key.mod_cool.changementdechantillon": "sample change"
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/modcool/init/ModCoolModKeyMappings.java",
       "src/main/java/net/mcreator/modcool/init/ModCoolModBlocks.java",
       "src/main/java/net/mcreator/modcool/init/ModCoolModItems.java",
       "src/main/java/net/mcreator/modcool/mixin/PlayerAnimationMixin.java",
       "src/main/java/net/mcreator/modcool/mixin/LivingEntityRendererMixin.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/modcool/init/ModCoolModModels.java",
       "src/main/java/net/mcreator/modcool/mixin/PlayerAnimationRendererMixin.java",
       "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/resources/mod_cool.mixins.json",
@@ -379,7 +394,13 @@
       "src/main/java/net/mcreator/modcool/init/ModCoolModTabs.java",
       "src/main/java/net/mcreator/modcool/ModCoolModPlayerAnimationAPI.java",
       "src/main/java/net/mcreator/modcool/mixin/ItemInHandLayerMixin.java"
-    ]
+    ],
+    "betteranimations_models": {
+      "PolyvalentScepter": "scepter_display_1:default"
+    },
+    "betteranimations_perspectives": {
+      "PolyvalentScepter": "All perspectives"
+    }
   },
   "foldersRoot": {
     "name": "~",

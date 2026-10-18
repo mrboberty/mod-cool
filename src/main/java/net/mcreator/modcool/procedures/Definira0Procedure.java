@@ -1,10 +1,17 @@
 package net.mcreator.modcool.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.entity.Entity;
+
+import net.mcreator.modcool.network.ModCoolModVariables;
 
 public class Definira0Procedure {
-	public static void execute(LevelAccessor world) {
-		ModCoolModVariables.MapVariables.get(world).Polyvalent_Scepter_Score = 0;
-		ModCoolModVariables.MapVariables.get(world).markSyncDirty();
+	public static void execute(Entity entity) {
+		if (entity == null)
+			return;
+		{
+			ModCoolModVariables.PlayerVariables _vars = entity.getData(ModCoolModVariables.PLAYER_VARIABLES);
+			_vars.Polyvalent_Scepter_Score = 0;
+			_vars.markSyncDirty();
+		}
 	}
 }

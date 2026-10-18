@@ -2,9 +2,9 @@
   "_fv": 85,
   "_type": "item",
   "definition": {
-    "renderType": 0,
+    "renderType": 3,
     "texture": "minecraft:breeze_rod",
-    "customModelName": "Normal",
+    "customModelName": "ModelPolyvalentScepter",
     "guiTexture": "",
     "customProperties": {},
     "states": [],

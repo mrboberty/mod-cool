@@ -4,5 +4,9 @@
   "item.mod_cool.the_realm": "The Realm Portal Igniter",
   "item.mod_cool.shadowsample": "Shadow sample",
   "item.mod_cool.light_sample": "Light Sample",
-  "item.mod_cool.polyvalent_scepter": "Polyvalent Scepter"
+  "item.mod_cool.polyvalent_scepter": "Polyvalent Scepter",
+  "block.mod_cool.light_grass": "Light Grass",
+  "block.mod_cool.light_ground": "Light Ground",
+  "biome.mod_cool.lit_up_fields": "Lit Up Fields",
+  "key.mod_cool.changementdechantillon": "sample change"
 }
