@@ -29,5 +29,7 @@ public class EquinoxModTabs {
 				tabData.accept(EquinoxModBlocks.DRY_GRASS.get().asItem());
 				tabData.accept(EquinoxModBlocks.DRY_GROUND.get().asItem());
 				tabData.accept(EquinoxModBlocks.WIGGLY_LIGHT_GRASS.get().asItem());
+				tabData.accept(EquinoxModBlocks.STAR_FLOWER.get().asItem());
+				tabData.accept(EquinoxModItems.SUNKISSER_SPAWN_EGG.get());
 			}).build());
 }

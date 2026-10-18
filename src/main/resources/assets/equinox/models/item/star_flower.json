@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "equinox:item/star_flower"
+  },
+  "render_type": "translucent"
+}

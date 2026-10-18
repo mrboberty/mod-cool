@@ -7,6 +7,9 @@ public class LightProjectileWhileProjectileFlyingTickProcedure {
 		if (immediatesourceentity == null)
 			return;
 		if (immediatesourceentity.getPersistentData().getDouble("life_time") < 100) {
+			if (immediatesourceentity.getPersistentData().getDouble("life_time") == 1) {
+				immediatesourceentity.getPersistentData().putDouble("life_time", (immediatesourceentity.getPersistentData().getDouble("life_time") + 1));
+			}
 			immediatesourceentity.getPersistentData().putDouble("life_time", (immediatesourceentity.getPersistentData().getDouble("life_time") + 1));
 		} else {
 			if (!immediatesourceentity.level().isClientSide())

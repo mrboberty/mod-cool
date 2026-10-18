@@ -1,0 +1,7 @@
+{
+  "type": "equinox:structure_feature",
+  "config": {
+    "structure": "equinox:star_flower",
+    "ignored_blocks": "minecraft:air"
+  }
+}

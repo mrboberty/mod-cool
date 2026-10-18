@@ -1,0 +1,7 @@
+{
+  "type": "equinox:structure_feature",
+  "config": {
+    "structure": "equinox:spawn_sunkisser",
+    "ignored_blocks": "minecraft:air"
+  }
+}

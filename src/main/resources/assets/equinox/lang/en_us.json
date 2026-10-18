@@ -31,5 +31,8 @@
   "block.equinox.dry_grass": "Dry Grass",
   "block.equinox.dry_ground": "Dry Ground",
   "biome.equinox.dry_land": "Dry Land",
-  "block.equinox.wiggly_light_grass": "Wiggly Light Grass"
+  "block.equinox.wiggly_light_grass": "Wiggly Light Grass",
+  "block.equinox.star_flower": "Star Flower",
+  "entity.equinox.sunkisser": "Sunkisser",
+  "item.equinox.sunkisser_spawn_egg": "Sunkisser Spawn Egg"
 }

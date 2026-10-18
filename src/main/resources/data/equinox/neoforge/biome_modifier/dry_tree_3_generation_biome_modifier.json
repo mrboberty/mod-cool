@@ -1,0 +1,9 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "equinox:dry_land",
+    "equinox:lit_up_fields"
+  ],
+  "features": "equinox:dry_tree_3_generation",
+  "step": "vegetal_decoration"
+}

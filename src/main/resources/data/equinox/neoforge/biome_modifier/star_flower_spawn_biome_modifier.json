@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "equinox:lit_up_fields",
+  "features": "equinox:star_flower_spawn",
+  "step": "surface_structures"
+}

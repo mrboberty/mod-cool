@@ -7,6 +7,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.fluids.capability.wrappers.FluidBucketWrapper;
+import net.neoforged.neoforge.common.DeferredSpawnEggItem;
 import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
 import net.neoforged.neoforge.capabilities.Capabilities;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -38,6 +39,8 @@ public class EquinoxModItems {
 	public static final DeferredItem<Item> DRY_GRASS;
 	public static final DeferredItem<Item> DRY_GROUND;
 	public static final DeferredItem<Item> WIGGLY_LIGHT_GRASS;
+	public static final DeferredItem<Item> STAR_FLOWER;
+	public static final DeferredItem<Item> SUNKISSER_SPAWN_EGG;
 	static {
 		LIGHT_GRASS = block(EquinoxModBlocks.LIGHT_GRASS);
 		LIGHT_GROUND = block(EquinoxModBlocks.LIGHT_GROUND);
@@ -51,6 +54,8 @@ public class EquinoxModItems {
 		DRY_GRASS = block(EquinoxModBlocks.DRY_GRASS);
 		DRY_GROUND = block(EquinoxModBlocks.DRY_GROUND);
 		WIGGLY_LIGHT_GRASS = block(EquinoxModBlocks.WIGGLY_LIGHT_GRASS);
+		STAR_FLOWER = block(EquinoxModBlocks.STAR_FLOWER);
+		SUNKISSER_SPAWN_EGG = REGISTRY.register("sunkisser_spawn_egg", () -> new DeferredSpawnEggItem(EquinoxModEntities.SUNKISSER, -1, -1, new Item.Properties()));
 	}
 
 	// Start of user code block custom items
