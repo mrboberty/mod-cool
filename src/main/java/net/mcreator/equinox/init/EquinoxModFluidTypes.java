@@ -8,7 +8,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.fluids.FluidType;
 
-import net.mcreator.equinox.fluid.types.LightEssenceFluidType;
+import net.mcreator.modcool.fluid.types.LightEssenceFluidType;
 import net.mcreator.equinox.EquinoxMod;
 
 public class EquinoxModFluidTypes {

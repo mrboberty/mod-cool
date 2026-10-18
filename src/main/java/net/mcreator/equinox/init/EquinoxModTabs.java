@@ -5,14 +5,19 @@ package net.mcreator.equinox.init;
 
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.equinox.EquinoxMod;
 
+@EventBusSubscriber
 public class EquinoxModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, EquinoxMod.MODID);
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> EQUINOX = REGISTRY.register("equinox",
@@ -32,4 +37,11 @@ public class EquinoxModTabs {
 				tabData.accept(EquinoxModBlocks.STAR_FLOWER.get().asItem());
 				tabData.accept(EquinoxModItems.SUNKISSER_SPAWN_EGG.get());
 			}).build());
+
+	@SubscribeEvent
+	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
+		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
+			tabData.accept(EquinoxModItems.POLYVALENT_SCEPTER.get());
+		}
+	}
 }

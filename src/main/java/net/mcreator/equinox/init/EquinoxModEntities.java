@@ -15,8 +15,8 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.registries.Registries;
 
+import net.mcreator.modcool.entity.LightProjectileEntity;
 import net.mcreator.equinox.entity.SunkisserEntity;
-import net.mcreator.equinox.entity.LightProjectileEntity;
 import net.mcreator.equinox.entity.DarkProjectileEntity;
 import net.mcreator.equinox.EquinoxMod;
 

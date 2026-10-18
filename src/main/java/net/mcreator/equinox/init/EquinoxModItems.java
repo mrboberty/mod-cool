@@ -17,11 +17,11 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.modcool.item.LightPelletItem;
+import net.mcreator.modcool.item.LightEssenceItem;
+import net.mcreator.modcool.item.DarknessPelletItem;
 import net.mcreator.equinox.item.TheRealmItem;
 import net.mcreator.equinox.item.PolyvalentScepterItem;
-import net.mcreator.equinox.item.LightPelletItem;
-import net.mcreator.equinox.item.LightEssenceItem;
-import net.mcreator.equinox.item.DarknessPelletItem;
 import net.mcreator.equinox.EquinoxMod;
 
 @EventBusSubscriber

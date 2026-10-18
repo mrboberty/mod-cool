@@ -16,7 +16,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
-import net.mcreator.equinox.fluid.LightEssenceFluid;
+import net.mcreator.modcool.fluid.LightEssenceFluid;
 import net.mcreator.equinox.EquinoxMod;
 
 public class EquinoxModFluids {

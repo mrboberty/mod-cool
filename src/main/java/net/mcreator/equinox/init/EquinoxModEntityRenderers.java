@@ -8,8 +8,8 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
+import net.mcreator.modcool.client.renderer.LightProjectileRenderer;
 import net.mcreator.equinox.client.renderer.SunkisserRenderer;
-import net.mcreator.equinox.client.renderer.LightProjectileRenderer;
 import net.mcreator.equinox.client.renderer.DarkProjectileRenderer;
 
 @EventBusSubscriber(Dist.CLIENT)

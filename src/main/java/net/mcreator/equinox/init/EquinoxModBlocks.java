@@ -8,6 +8,8 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.modcool.block.LightEssenceBlock;
+import net.mcreator.modcool.block.FracturedLogBlock;
 import net.mcreator.equinox.block.*;
 import net.mcreator.equinox.EquinoxMod;
 

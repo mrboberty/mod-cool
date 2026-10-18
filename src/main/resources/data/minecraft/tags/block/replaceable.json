@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "mod_cool:light_essence"
+    "equinox:star_flower",
+    "equinox:wiggly_light_grass",
+    "equinox:light_essence"
   ]
 }
