@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "equinox:lit_up_fields",
+  "features": "equinox:essence_lake_generation",
+  "step": "surface_structures"
+}

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "equinox:wiggly_light_grass",
     "equinox:light_essence"
   ]
 }

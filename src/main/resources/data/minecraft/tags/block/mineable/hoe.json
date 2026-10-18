@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "equinox:dense_leaves"
+    "equinox:dense_leaves",
+    "equinox:wiggly_light_grass"
   ]
 }

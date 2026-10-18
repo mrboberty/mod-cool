@@ -21,6 +21,7 @@ public class EquinoxModBlocks {
 	public static final DeferredBlock<Block> DENSE_LEAVES;
 	public static final DeferredBlock<Block> DRY_GRASS;
 	public static final DeferredBlock<Block> DRY_GROUND;
+	public static final DeferredBlock<Block> WIGGLY_LIGHT_GRASS;
 	static {
 		LIGHT_GRASS = REGISTRY.register("light_grass", LightGrassBlock::new);
 		LIGHT_GROUND = REGISTRY.register("light_ground", LightGroundBlock::new);
@@ -30,6 +31,7 @@ public class EquinoxModBlocks {
 		DENSE_LEAVES = REGISTRY.register("dense_leaves", DenseLeavesBlock::new);
 		DRY_GRASS = REGISTRY.register("dry_grass", DryGrassBlock::new);
 		DRY_GROUND = REGISTRY.register("dry_ground", DryGroundBlock::new);
+		WIGGLY_LIGHT_GRASS = REGISTRY.register("wiggly_light_grass", WigglyLightGrassBlock::new);
 	}
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

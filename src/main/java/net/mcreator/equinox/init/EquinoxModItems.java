@@ -37,6 +37,7 @@ public class EquinoxModItems {
 	public static final DeferredItem<Item> DENSE_LEAVES;
 	public static final DeferredItem<Item> DRY_GRASS;
 	public static final DeferredItem<Item> DRY_GROUND;
+	public static final DeferredItem<Item> WIGGLY_LIGHT_GRASS;
 	static {
 		LIGHT_GRASS = block(EquinoxModBlocks.LIGHT_GRASS);
 		LIGHT_GROUND = block(EquinoxModBlocks.LIGHT_GROUND);
@@ -49,6 +50,7 @@ public class EquinoxModItems {
 		DENSE_LEAVES = block(EquinoxModBlocks.DENSE_LEAVES);
 		DRY_GRASS = block(EquinoxModBlocks.DRY_GRASS);
 		DRY_GROUND = block(EquinoxModBlocks.DRY_GROUND);
+		WIGGLY_LIGHT_GRASS = block(EquinoxModBlocks.WIGGLY_LIGHT_GRASS);
 	}
 
 	// Start of user code block custom items

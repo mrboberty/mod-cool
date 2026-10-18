@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "equinox:block/light_grass_animated",
+    "particle": "equinox:block/light_grass_animated"
+  },
+  "render_type": "cutout"
+}

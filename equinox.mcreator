@@ -266,7 +266,6 @@
           "src/main/java/net/mcreator/equinox/block/DenseLeavesBlock.java",
           "src/main/resources/assets/equinox/models/block/dense_leaves.json",
           "src/main/resources/assets/equinox/models/item/dense_leaves.json",
-          "src/main/resources/data/equinox/loot_table/blocks/dense_leaves.json",
           "src/main/resources/assets/equinox/blockstates/dense_leaves.json"
         ]
       },
@@ -318,6 +317,127 @@
         ]
       },
       "path": "~/LightWorld"
+    },
+    {
+      "name": "Tree1Generation",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tree_1_generation",
+      "metadata": {
+        "has_nbt_structure": true,
+        "files": [
+          "src/main/resources/data/equinox/neoforge/biome_modifier/tree_1_generation_biome_modifier.json",
+          "src/main/resources/data/equinox/worldgen/configured_feature/tree_1_generation.json",
+          "src/main/resources/data/equinox/worldgen/placed_feature/tree_1_generation.json"
+        ]
+      },
+      "path": "~/LightWorld"
+    },
+    {
+      "name": "Tree2Generation",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tree_2_generation",
+      "metadata": {
+        "has_nbt_structure": true,
+        "files": [
+          "src/main/resources/data/equinox/worldgen/placed_feature/tree_2_generation.json",
+          "src/main/resources/data/equinox/neoforge/biome_modifier/tree_2_generation_biome_modifier.json",
+          "src/main/resources/data/equinox/worldgen/configured_feature/tree_2_generation.json"
+        ]
+      },
+      "path": "~/LightWorld"
+    },
+    {
+      "name": "Tree3Generation",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tree_3_generation",
+      "metadata": {
+        "has_nbt_structure": true,
+        "files": [
+          "src/main/resources/data/equinox/neoforge/biome_modifier/tree_3_generation_biome_modifier.json",
+          "src/main/resources/data/equinox/worldgen/configured_feature/tree_3_generation.json",
+          "src/main/resources/data/equinox/worldgen/placed_feature/tree_3_generation.json"
+        ]
+      },
+      "path": "~/LightWorld"
+    },
+    {
+      "name": "EssenceLakeGeneration",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "essence_lake_generation",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/equinox/neoforge/biome_modifier/essence_lake_generation_biome_modifier.json",
+          "src/main/resources/data/equinox/worldgen/configured_feature/essence_lake_generation.json",
+          "src/main/resources/data/equinox/worldgen/placed_feature/essence_lake_generation.json"
+        ]
+      },
+      "path": "~/LightWorld"
+    },
+    {
+      "name": "WigglyLightGrass",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wiggly_light_grass",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/equinox/models/item/wiggly_light_grass.json",
+          "src/main/java/net/mcreator/equinox/block/WigglyLightGrassBlock.java",
+          "src/main/resources/assets/equinox/blockstates/wiggly_light_grass.json",
+          "src/main/resources/assets/equinox/models/block/wiggly_light_grass.json"
+        ]
+      },
+      "path": "~/LightWorld"
+    },
+    {
+      "name": "LightGrassWigglyLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_grass_wiggly_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/equinox/loot_table/blocks/wiggly_light_grass.json"
+        ]
+      },
+      "path": "~/LightWorld"
+    },
+    {
+      "name": "DenseLeavesLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dense_leaves_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/equinox/loot_table/blocks/dense_leaves.json"
+        ]
+      },
+      "path": "~/LightWorld"
+    },
+    {
+      "name": "WigglyGrassSpawning",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wiggly_grass_spawning",
+      "metadata": {
+        "has_nbt_structure": true,
+        "files": [
+          "src/main/resources/data/equinox/neoforge/biome_modifier/wiggly_grass_spawning_biome_modifier.json",
+          "src/main/resources/data/equinox/worldgen/placed_feature/wiggly_grass_spawning.json",
+          "src/main/resources/data/equinox/worldgen/configured_feature/wiggly_grass_spawning.json"
+        ]
+      },
+      "path": "~/LightWorld"
     }
   ],
   "variable_elements": [],
@@ -347,6 +467,7 @@
       "~CUSTOM:LightGround"
     ],
     "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:WigglyLightGrass",
       "~CUSTOM:LightEssence"
     ],
     "BLOCKS:minecraft:mineable/axe": [
@@ -357,6 +478,7 @@
       "~CUSTOM:LightGrass"
     ],
     "BLOCKS:minecraft:mineable/hoe": [
+      "~CUSTOM:WigglyLightGrass",
       "~CUSTOM:DenseLeaves"
     ],
     "BLOCKS:minecraft:leaves": [
@@ -383,7 +505,8 @@
       "LightEssence",
       "DenseLeaves",
       "DryGrass",
-      "DryGround"
+      "DryGround",
+      "WigglyLightGrass"
     ]
   },
   "language_map": {
@@ -419,11 +542,14 @@
       "block.equinox.dense_leaves": "Dense Leaves",
       "block.equinox.dry_grass": "Dry Grass",
       "block.equinox.dry_ground": "Dry Ground",
-      "biome.equinox.dry_land": "Dry Land"
+      "biome.equinox.dry_land": "Dry Land",
+      "block.equinox.wiggly_light_grass": "Wiggly Light Grass"
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/equinox/world/features/configurations/StructureFeatureConfiguration.java",
+      "src/main/java/net/mcreator/equinox/world/features/StructureFeature.java",
       "src/main/java/net/mcreator/equinox/init/EquinoxModFluids.java",
       "src/main/java/net/mcreator/equinox/init/EquinoxModFluidTypes.java",
       "src/main/java/net/mcreator/equinox/init/EquinoxModBlocks.java",

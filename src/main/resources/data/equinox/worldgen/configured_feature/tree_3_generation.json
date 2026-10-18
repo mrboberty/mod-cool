@@ -1,0 +1,12 @@
+{
+  "type": "equinox:structure_feature",
+  "config": {
+    "structure": "equinox:tree_3",
+    "ignored_blocks": "minecraft:air",
+    "offset": [
+      0,
+      0,
+      -1
+    ]
+  }
+}

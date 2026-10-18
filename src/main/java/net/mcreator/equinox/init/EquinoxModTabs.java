@@ -28,5 +28,6 @@ public class EquinoxModTabs {
 				tabData.accept(EquinoxModBlocks.DENSE_LEAVES.get().asItem());
 				tabData.accept(EquinoxModBlocks.DRY_GRASS.get().asItem());
 				tabData.accept(EquinoxModBlocks.DRY_GROUND.get().asItem());
+				tabData.accept(EquinoxModBlocks.WIGGLY_LIGHT_GRASS.get().asItem());
 			}).build());
 }

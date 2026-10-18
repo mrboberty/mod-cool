@@ -18,6 +18,7 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.equinox.world.features.StructureFeature;
 import net.mcreator.equinox.init.*;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
@@ -45,6 +46,7 @@ public class EquinoxMod {
 		EquinoxModItems.REGISTRY.register(modEventBus);
 		EquinoxModEntities.REGISTRY.register(modEventBus);
 		EquinoxModTabs.REGISTRY.register(modEventBus);
+		StructureFeature.REGISTRY.register(modEventBus);
 		EquinoxModFluids.REGISTRY.register(modEventBus);
 		EquinoxModFluidTypes.REGISTRY.register(modEventBus);
 		// Start of user code block mod init

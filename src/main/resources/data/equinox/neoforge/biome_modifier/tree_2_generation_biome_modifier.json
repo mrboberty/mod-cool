@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "equinox:lit_up_fields",
+  "features": "equinox:tree_2_generation",
+  "step": "vegetal_decoration"
+}
