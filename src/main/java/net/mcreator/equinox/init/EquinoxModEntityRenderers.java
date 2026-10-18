@@ -9,11 +9,13 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
 import net.mcreator.equinox.client.renderer.LightProjectileRenderer;
+import net.mcreator.equinox.client.renderer.DarkProjectileRenderer;
 
 @EventBusSubscriber(Dist.CLIENT)
 public class EquinoxModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(EquinoxModEntities.LIGHT_PROJECTILE.get(), LightProjectileRenderer::new);
+		event.registerEntityRenderer(EquinoxModEntities.DARK_PROJECTILE.get(), DarkProjectileRenderer::new);
 	}
 }

@@ -4,7 +4,6 @@ import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
@@ -21,7 +20,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.registries.BuiltInRegistries;
 
-import net.mcreator.equinox.procedures.LightProjectileProjectileHitsLivingEntityProcedure;
+import net.mcreator.equinox.procedures.LightProjectileWhileProjectileFlyingTickProcedure;
 import net.mcreator.equinox.init.EquinoxModItems;
 import net.mcreator.equinox.init.EquinoxModEntities;
 
@@ -86,14 +85,9 @@ public class LightProjectileEntity extends AbstractArrow implements ItemSupplier
 	}
 
 	@Override
-	public void onHitEntity(EntityHitResult entityHitResult) {
-		super.onHitEntity(entityHitResult);
-		LightProjectileProjectileHitsLivingEntityProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), entityHitResult.getEntity(), this.getOwner());
-	}
-
-	@Override
 	public void tick() {
 		super.tick();
+		LightProjectileWhileProjectileFlyingTickProcedure.execute(this);
 		if (this.inGround)
 			this.discard();
 	}

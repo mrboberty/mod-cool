@@ -1,0 +1,26 @@
+{
+  "_fv": 85,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:DarknessPellet"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": false,
+    "disableGravity": true,
+    "disableDiscarding": false,
+    "power": 0.5,
+    "damage": 3.0,
+    "knockback": 0,
+    "entityModel": "Modellight_projectile",
+    "customModelTexture": "dark_projectile_texture.png",
+    "modelWidth": 0.5,
+    "modelHeight": 0.5,
+    "onFlyingTick": {
+      "name": "LightProjectileWhileProjectileFlyingTick"
+    }
+  }
+}

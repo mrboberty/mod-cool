@@ -40,6 +40,7 @@ public class EquinoxMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
+		EquinoxModSounds.REGISTRY.register(modEventBus);
 		EquinoxModBlocks.REGISTRY.register(modEventBus);
 		EquinoxModItems.REGISTRY.register(modEventBus);
 		EquinoxModEntities.REGISTRY.register(modEventBus);

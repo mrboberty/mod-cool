@@ -24,5 +24,11 @@
   "item.equinox.polyvalent_scepter": "Polyvalent Scepter",
   "item.equinox.light_pellet": "Light Pellet",
   "item.equinox.darkness_pellet": "Darkness Pellet",
-  "item_group.equinox.equinox": "Equinox"
+  "item_group.equinox.equinox": "Equinox",
+  "subtitles.darkness_shoot": "",
+  "subtitles.light_shoot": "",
+  "block.equinox.dense_leaves": "Dense Leaves",
+  "block.equinox.dry_grass": "Dry Grass",
+  "block.equinox.dry_ground": "Dry Ground",
+  "biome.equinox.dry_land": "Dry Land"
 }

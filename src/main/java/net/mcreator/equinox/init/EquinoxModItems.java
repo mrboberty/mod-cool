@@ -34,6 +34,9 @@ public class EquinoxModItems {
 	public static final DeferredItem<Item> POLYVALENT_SCEPTER;
 	public static final DeferredItem<Item> LIGHT_PELLET;
 	public static final DeferredItem<Item> DARKNESS_PELLET;
+	public static final DeferredItem<Item> DENSE_LEAVES;
+	public static final DeferredItem<Item> DRY_GRASS;
+	public static final DeferredItem<Item> DRY_GROUND;
 	static {
 		LIGHT_GRASS = block(EquinoxModBlocks.LIGHT_GRASS);
 		LIGHT_GROUND = block(EquinoxModBlocks.LIGHT_GROUND);
@@ -43,6 +46,9 @@ public class EquinoxModItems {
 		POLYVALENT_SCEPTER = REGISTRY.register("polyvalent_scepter", PolyvalentScepterItem::new);
 		LIGHT_PELLET = REGISTRY.register("light_pellet", LightPelletItem::new);
 		DARKNESS_PELLET = REGISTRY.register("darkness_pellet", DarknessPelletItem::new);
+		DENSE_LEAVES = block(EquinoxModBlocks.DENSE_LEAVES);
+		DRY_GRASS = block(EquinoxModBlocks.DRY_GRASS);
+		DRY_GROUND = block(EquinoxModBlocks.DRY_GROUND);
 	}
 
 	// Start of user code block custom items

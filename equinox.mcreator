@@ -196,6 +196,10 @@
             "type": "entity"
           },
           {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -219,49 +223,126 @@
       "path": "~/PolyvalentScepter"
     },
     {
-      "name": "LightProjectileProjectileHitsLivingEntity",
+      "name": "LightProjectileWhileProjectileFlyingTick",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "light_projectile_projectile_hits_living_entity",
+      "registry_name": "light_projectile_while_projectile_flying_tick",
       "metadata": {
         "dependencies": [
           {
-            "name": "entity",
+            "name": "immediatesourceentity",
             "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ],
         "files": [
-          "src/main/java/net/mcreator/equinox/procedures/LightProjectileProjectileHitsLivingEntityProcedure.java"
+          "src/main/java/net/mcreator/equinox/procedures/LightProjectileWhileProjectileFlyingTickProcedure.java"
         ]
       },
       "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "DarkProjectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/equinox/entity/DarkProjectileEntity.java",
+          "src/main/java/net/mcreator/equinox/client/renderer/DarkProjectileRenderer.java"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "DenseLeaves",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dense_leaves",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/equinox/block/DenseLeavesBlock.java",
+          "src/main/resources/assets/equinox/models/block/dense_leaves.json",
+          "src/main/resources/assets/equinox/models/item/dense_leaves.json",
+          "src/main/resources/data/equinox/loot_table/blocks/dense_leaves.json",
+          "src/main/resources/assets/equinox/blockstates/dense_leaves.json"
+        ]
+      },
+      "path": "~/LightWorld"
+    },
+    {
+      "name": "DryGrass",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dry_grass",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/equinox/block/DryGrassBlock.java",
+          "src/main/resources/data/equinox/loot_table/blocks/dry_grass.json",
+          "src/main/resources/assets/equinox/blockstates/dry_grass.json",
+          "src/main/resources/assets/equinox/models/item/dry_grass.json",
+          "src/main/resources/assets/equinox/models/block/dry_grass.json"
+        ]
+      },
+      "path": "~/LightWorld"
+    },
+    {
+      "name": "DryGround",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dry_ground",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/equinox/blockstates/dry_ground.json",
+          "src/main/resources/assets/equinox/models/item/dry_ground.json",
+          "src/main/java/net/mcreator/equinox/block/DryGroundBlock.java",
+          "src/main/resources/assets/equinox/models/block/dry_ground.json",
+          "src/main/resources/data/equinox/loot_table/blocks/dry_ground.json"
+        ]
+      },
+      "path": "~/LightWorld"
+    },
+    {
+      "name": "DryLand",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dry_land",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/equinox/worldgen/biome/dry_land.json"
+        ]
+      },
+      "path": "~/LightWorld"
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "darkness_shoot",
+      "files": [
+        "darkness_shoot"
+      ],
+      "category": "player",
+      "subtitle": ""
+    },
+    {
+      "name": "light_shoot",
+      "files": [
+        "light_shoot"
+      ],
+      "category": "player",
+      "subtitle": ""
+    }
+  ],
   "tag_elements": {
     "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~CUSTOM:DryGround",
+      "~CUSTOM:DryGrass",
       "~CUSTOM:LightGrass",
       "~CUSTOM:LightGround"
     ],
@@ -274,6 +355,20 @@
     "BLOCKS:minecraft:mineable/shovel": [
       "~CUSTOM:LightGround",
       "~CUSTOM:LightGrass"
+    ],
+    "BLOCKS:minecraft:mineable/hoe": [
+      "~CUSTOM:DenseLeaves"
+    ],
+    "BLOCKS:minecraft:leaves": [
+      "~CUSTOM:DenseLeaves"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:DryGround",
+      "~CUSTOM:DryGrass"
+    ],
+    "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:DryGrass",
+      "~CUSTOM:DryGround"
     ]
   },
   "tab_element_order": {
@@ -285,7 +380,10 @@
       "LightPellet",
       "DarknessPellet",
       "TheRealm",
-      "LightEssence"
+      "LightEssence",
+      "DenseLeaves",
+      "DryGrass",
+      "DryGround"
     ]
   },
   "language_map": {
@@ -315,7 +413,13 @@
       "item.equinox.polyvalent_scepter": "Polyvalent Scepter",
       "item.equinox.light_pellet": "Light Pellet",
       "item.equinox.darkness_pellet": "Darkness Pellet",
-      "item_group.equinox.equinox": "Equinox"
+      "item_group.equinox.equinox": "Equinox",
+      "subtitles.darkness_shoot": "",
+      "subtitles.light_shoot": "",
+      "block.equinox.dense_leaves": "Dense Leaves",
+      "block.equinox.dry_grass": "Dry Grass",
+      "block.equinox.dry_ground": "Dry Ground",
+      "biome.equinox.dry_land": "Dry Land"
     }
   },
   "metadata": {
@@ -327,6 +431,7 @@
       "src/main/java/net/mcreator/equinox/init/EquinoxModEntities.java",
       "src/main/java/net/mcreator/equinox/init/EquinoxModEntityRenderers.java",
       "src/main/java/net/mcreator/equinox/mixin/PlayerAnimationRendererMixin.java",
+      "src/main/java/net/mcreator/equinox/init/EquinoxModSounds.java",
       "src/main/java/net/mcreator/equinox/EquinoxModPlayerAnimationAPI.java",
       "src/main/resources/equinox.mixins.json",
       "src/main/java/net/mcreator/equinox/mixin/ItemInHandRendererMixin.java",
@@ -336,6 +441,7 @@
       "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/java/net/mcreator/equinox/mixin/LevelRendererMixin.java",
       "src/main/java/net/mcreator/equinox/mixin/LivingEntityRendererMixin.java",
+      "src/main/resources/assets/equinox/sounds.json",
       "src/main/java/net/mcreator/equinox/mixin/PlayerAnimationMixin.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",

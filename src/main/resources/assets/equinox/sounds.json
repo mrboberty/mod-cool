@@ -1,0 +1,18 @@
+{
+  "darkness_shoot": {
+    "sounds": [
+      {
+        "name": "equinox:darkness_shoot",
+        "stream": false
+      }
+    ]
+  },
+  "light_shoot": {
+    "sounds": [
+      {
+        "name": "equinox:light_shoot",
+        "stream": false
+      }
+    ]
+  }
+}

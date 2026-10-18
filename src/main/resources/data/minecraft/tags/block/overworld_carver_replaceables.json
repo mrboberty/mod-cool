@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "equinox:light_ground",
-    "equinox:light_grass"
+    "equinox:light_grass",
+    "equinox:dry_grass",
+    "equinox:dry_ground"
   ]
 }

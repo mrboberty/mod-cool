@@ -25,5 +25,8 @@ public class EquinoxModTabs {
 				tabData.accept(EquinoxModItems.DARKNESS_PELLET.get());
 				tabData.accept(EquinoxModItems.THE_REALM.get());
 				tabData.accept(EquinoxModItems.LIGHT_ESSENCE_BUCKET.get());
+				tabData.accept(EquinoxModBlocks.DENSE_LEAVES.get().asItem());
+				tabData.accept(EquinoxModBlocks.DRY_GRASS.get().asItem());
+				tabData.accept(EquinoxModBlocks.DRY_GROUND.get().asItem());
 			}).build());
 }

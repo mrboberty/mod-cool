@@ -1,37 +1,76 @@
 package net.mcreator.equinox.procedures;
 
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.GameType;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.BlockPos;
 import net.minecraft.client.multiplayer.PlayerInfo;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.equinox.init.EquinoxModItems;
 import net.mcreator.equinox.init.EquinoxModEntities;
 import net.mcreator.equinox.entity.LightProjectileEntity;
+import net.mcreator.equinox.entity.DarkProjectileEntity;
 
 public class PolyvalentScepterRightclickedProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if (hasEntityInInventory(entity, new ItemStack(EquinoxModItems.LIGHT_PELLET.get()))) {
-			if (!(getEntityGameType(entity) == GameType.CREATIVE)) {
-				if (entity instanceof Player _player) {
-					ItemStack _stktoremove = new ItemStack(EquinoxModItems.LIGHT_PELLET.get());
-					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+		if (!(entity instanceof Player _plrCldCheck1 && _plrCldCheck1.getCooldowns().isOnCooldown(itemstack.getItem()))) {
+			if (hasEntityInInventory(entity, new ItemStack(EquinoxModItems.LIGHT_PELLET.get()))) {
+				if (!(getEntityGameType(entity) == GameType.CREATIVE)) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = new ItemStack(EquinoxModItems.LIGHT_PELLET.get());
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
 				}
-			}
-			if (world instanceof ServerLevel projectileLevel) {
-				Projectile _entityToSpawn = initArrowProjectile(new LightProjectileEntity(EquinoxModEntities.LIGHT_PROJECTILE.get(), projectileLevel), entity, 3, true, false, false, AbstractArrow.Pickup.DISALLOWED);
-				_entityToSpawn.setPos(x, (y + 2), z);
-				_entityToSpawn.shoot((entity.getLookAngle().x), (entity.getLookAngle().y), (entity.getLookAngle().z), (float) 0.6, 0);
-				projectileLevel.addFreshEntity(_entityToSpawn);
+				if (world instanceof ServerLevel projectileLevel) {
+					Projectile _entityToSpawn = initArrowProjectile(new LightProjectileEntity(EquinoxModEntities.LIGHT_PROJECTILE.get(), projectileLevel), entity, 3, true, false, false, AbstractArrow.Pickup.DISALLOWED);
+					_entityToSpawn.setPos(x, (y + 1.7), z);
+					_entityToSpawn.shoot((entity.getLookAngle().x), (entity.getLookAngle().y), (entity.getLookAngle().z), (float) 0.6, 0);
+					projectileLevel.addFreshEntity(_entityToSpawn);
+				}
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("equinox:light_shoot")), SoundSource.PLAYERS, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("equinox:light_shoot")), SoundSource.PLAYERS, 1, 1, false);
+					}
+				}
+				if (entity instanceof Player _player)
+					_player.getCooldowns().addCooldown(itemstack.getItem(), 20);
+			} else if (hasEntityInInventory(entity, new ItemStack(EquinoxModItems.DARKNESS_PELLET.get()))) {
+				if (!(getEntityGameType(entity) == GameType.CREATIVE)) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = new ItemStack(EquinoxModItems.DARKNESS_PELLET.get());
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+				}
+				if (world instanceof ServerLevel projectileLevel) {
+					Projectile _entityToSpawn = initArrowProjectile(new DarkProjectileEntity(EquinoxModEntities.DARK_PROJECTILE.get(), projectileLevel), entity, 3, true, false, false, AbstractArrow.Pickup.DISALLOWED);
+					_entityToSpawn.setPos(x, (y + 1.7), z);
+					_entityToSpawn.shoot((entity.getLookAngle().x), (entity.getLookAngle().y), (entity.getLookAngle().z), (float) 0.6, 0);
+					projectileLevel.addFreshEntity(_entityToSpawn);
+				}
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("equinox:darkness_shoot")), SoundSource.PLAYERS, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("equinox:darkness_shoot")), SoundSource.PLAYERS, 1, 1, false);
+					}
+				}
+				if (entity instanceof Player _player)
+					_player.getCooldowns().addCooldown(itemstack.getItem(), 20);
 			}
 		}
 	}
