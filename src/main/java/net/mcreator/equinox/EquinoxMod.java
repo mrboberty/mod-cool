@@ -47,6 +47,7 @@ public class EquinoxMod {
 		EquinoxModEntities.REGISTRY.register(modEventBus);
 		EquinoxModTabs.REGISTRY.register(modEventBus);
 		StructureFeature.REGISTRY.register(modEventBus);
+		EquinoxModMenus.REGISTRY.register(modEventBus);
 		EquinoxModFluids.REGISTRY.register(modEventBus);
 		EquinoxModFluidTypes.REGISTRY.register(modEventBus);
 		// Start of user code block mod init

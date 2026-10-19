@@ -1,0 +1,8 @@
+{
+  "_fv": 85,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"summon_photon_particle_world\"><field name=\"Name\">light_explosion</field><value name=\"X\"><block type=\"coord_x\"></block></value><value name=\"Y\"><block type=\"coord_y\"></block></value><value name=\"Z\"><block type=\"coord_z\"></block></value><next><block type=\"world_entity_inrange_foreach\"><value name=\"_placeholder\"><block type=\"entity_iterator\"></block></value><value name=\"x\"><block type=\"coord_x\"></block></value><value name=\"y\"><block type=\"coord_y\"></block></value><value name=\"z\"><block type=\"coord_z\"></block></value><value name=\"range\"><block type=\"math_number\"><field name=\"NUM\">6</field></block></value><statement name=\"foreach\"><block type=\"deal_damage\"><value name=\"amount\"><block type=\"math_number\"><field name=\"NUM\">3</field></block></value><value name=\"entity\"><block type=\"entity_iterator\"></block></value><value name=\"damagesource\"><block type=\"damagesource_from_type\"><field name=\"damagetype\">CUSTOM:Exposure</field></block></value></block></statement></block></next></block></next></block></xml>",
+    "skipDependencyNullCheck": false
+  }
+}

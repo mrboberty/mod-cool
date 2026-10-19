@@ -17,11 +17,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
-import net.mcreator.equinox.item.TheRealmItem;
-import net.mcreator.equinox.item.PolyvalentScepterItem;
-import net.mcreator.equinox.item.LightPelletItem;
-import net.mcreator.equinox.item.LightEssenceItem;
-import net.mcreator.equinox.item.DarknessPelletItem;
+import net.mcreator.equinox.item.*;
 import net.mcreator.equinox.EquinoxMod;
 
 @EventBusSubscriber
@@ -41,6 +37,10 @@ public class EquinoxModItems {
 	public static final DeferredItem<Item> WIGGLY_LIGHT_GRASS;
 	public static final DeferredItem<Item> STAR_FLOWER;
 	public static final DeferredItem<Item> SUNKISSER_SPAWN_EGG;
+	public static final DeferredItem<Item> FLOREVORE_SPAWN_EGG;
+	public static final DeferredItem<Item> LIGHT_PATRON_SPAWN_EGG;
+	public static final DeferredItem<Item> ALTAR;
+	public static final DeferredItem<Item> SUNBALL;
 	static {
 		LIGHT_GRASS = block(EquinoxModBlocks.LIGHT_GRASS);
 		LIGHT_GROUND = block(EquinoxModBlocks.LIGHT_GROUND);
@@ -56,6 +56,10 @@ public class EquinoxModItems {
 		WIGGLY_LIGHT_GRASS = block(EquinoxModBlocks.WIGGLY_LIGHT_GRASS);
 		STAR_FLOWER = block(EquinoxModBlocks.STAR_FLOWER);
 		SUNKISSER_SPAWN_EGG = REGISTRY.register("sunkisser_spawn_egg", () -> new DeferredSpawnEggItem(EquinoxModEntities.SUNKISSER, -1, -1, new Item.Properties()));
+		FLOREVORE_SPAWN_EGG = REGISTRY.register("florevore_spawn_egg", () -> new DeferredSpawnEggItem(EquinoxModEntities.FLOREVORE, -1, -1, new Item.Properties()));
+		LIGHT_PATRON_SPAWN_EGG = REGISTRY.register("light_patron_spawn_egg", () -> new DeferredSpawnEggItem(EquinoxModEntities.LIGHT_PATRON, -1, -1, new Item.Properties()));
+		ALTAR = block(EquinoxModBlocks.ALTAR);
+		SUNBALL = REGISTRY.register("sunball", SunballItem::new);
 	}
 
 	// Start of user code block custom items

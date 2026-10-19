@@ -1,16 +1,64 @@
 {
-  "darkness_shoot": {
+  "light_shoot": {
     "sounds": [
       {
-        "name": "equinox:darkness_shoot",
+        "name": "equinox:light_sfx",
         "stream": false
       }
     ]
   },
-  "light_shoot": {
+  "dark_shoot": {
     "sounds": [
       {
-        "name": "equinox:light_shoot",
+        "name": "equinox:shadow_sfx",
+        "stream": false
+      }
+    ]
+  },
+  "light_patron_summon_rise": {
+    "sounds": [
+      {
+        "name": "equinox:rise_boss_summon",
+        "stream": false
+      }
+    ]
+  },
+  "light_patron_summon_stand": {
+    "sounds": [
+      {
+        "name": "equinox:stand_a_chance_boss_summon",
+        "stream": false
+      }
+    ]
+  },
+  "light_patron_summon_handle": {
+    "sounds": [
+      {
+        "name": "equinox:see_how_you_handle_that_boss_summon",
+        "stream": false
+      }
+    ]
+  },
+  "light_patron_ambient": {
+    "sounds": [
+      {
+        "name": "equinox:light_patron_ambient",
+        "stream": false
+      }
+    ]
+  },
+  "light_patron_expulse_away": {
+    "sounds": [
+      {
+        "name": "equinox:light_patron_expulse_go_away",
+        "stream": false
+      }
+    ]
+  },
+  "light_patron_expulse_mind": {
+    "sounds": [
+      {
+        "name": "equinox:light_patron_expulse_do_you_mind",
         "stream": false
       }
     ]

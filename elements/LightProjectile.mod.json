@@ -22,6 +22,9 @@
     "onHitsBlock": {
       "name": "LightProjectileProjectileHitsBlock"
     },
+    "onHitsEntity": {
+      "name": "LightProjectileProjectileHitsLivingEntity"
+    },
     "onFlyingTick": {
       "name": "LightProjectileWhileProjectileFlyingTick"
     }

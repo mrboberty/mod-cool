@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "equinox:lit_up_fields",
+  "features": "equinox:entity_spawn_florevore",
+  "step": "surface_structures"
+}

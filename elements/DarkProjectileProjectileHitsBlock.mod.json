@@ -1,0 +1,8 @@
+{
+  "_fv": 85,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"summon_photon_particle_world\"><field name=\"Name\">dark_explosion</field><value name=\"X\"><block type=\"coord_x\"></block></value><value name=\"Y\"><block type=\"math_dual_ops\"><field name=\"OP\">ADD</field><value name=\"A\"><block type=\"coord_y\"></block></value><value name=\"B\"><block type=\"math_number\"><field name=\"NUM\">0.6</field></block></value></block></value><value name=\"Z\"><block type=\"coord_z\"></block></value></block></next></block></xml>",
+    "skipDependencyNullCheck": false
+  }
+}

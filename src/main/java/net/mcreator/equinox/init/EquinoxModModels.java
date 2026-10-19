@@ -10,12 +10,16 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.mcreator.equinox.client.model.Modellight_projectile;
 import net.mcreator.equinox.client.model.ModelSunkisser;
+import net.mcreator.equinox.client.model.ModelLightPatron;
+import net.mcreator.equinox.client.model.ModelFlorevore;
 
 @EventBusSubscriber(Dist.CLIENT)
 public class EquinoxModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
+		event.registerLayerDefinition(ModelFlorevore.LAYER_LOCATION, ModelFlorevore::createBodyLayer);
 		event.registerLayerDefinition(Modellight_projectile.LAYER_LOCATION, Modellight_projectile::createBodyLayer);
+		event.registerLayerDefinition(ModelLightPatron.LAYER_LOCATION, ModelLightPatron::createBodyLayer);
 		event.registerLayerDefinition(ModelSunkisser.LAYER_LOCATION, ModelSunkisser::createBodyLayer);
 	}
 }

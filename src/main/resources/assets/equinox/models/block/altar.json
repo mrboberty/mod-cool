@@ -1,0 +1,9 @@
+{
+  "parent": "equinox:custom/altar",
+  "textures": {
+    "all": "minecraft:block/obsidian",
+    "particle": "minecraft:block/obsidian",
+    "0": "equinox:block/altar_texture"
+  },
+  "render_type": "solid"
+}

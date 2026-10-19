@@ -70,7 +70,7 @@
     "hasCustomOpacity": true,
     "lightOpacity": 0,
     "tickRate": 0,
-    "tickRandomly": false,
+    "tickRandomly": true,
     "isReplaceable": true,
     "canProvidePower": false,
     "emittedRedstonePower": {
@@ -141,6 +141,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onTickUpdate": {
+      "name": "StarFlowerOnTickUpdate"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

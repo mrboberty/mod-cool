@@ -19,6 +19,12 @@
     "customModelTexture": "dark_projectile_texture.png",
     "modelWidth": 0.5,
     "modelHeight": 0.5,
+    "onHitsBlock": {
+      "name": "DarkProjectileProjectileHitsBlock"
+    },
+    "onHitsEntity": {
+      "name": "DarkProjectileProjectileHitsLivingEntity"
+    },
     "onFlyingTick": {
       "name": "LightProjectileWhileProjectileFlyingTick"
     }

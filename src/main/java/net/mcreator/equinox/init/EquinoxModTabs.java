@@ -31,5 +31,9 @@ public class EquinoxModTabs {
 				tabData.accept(EquinoxModBlocks.WIGGLY_LIGHT_GRASS.get().asItem());
 				tabData.accept(EquinoxModBlocks.STAR_FLOWER.get().asItem());
 				tabData.accept(EquinoxModItems.SUNKISSER_SPAWN_EGG.get());
+				tabData.accept(EquinoxModItems.FLOREVORE_SPAWN_EGG.get());
+				tabData.accept(EquinoxModItems.LIGHT_PATRON_SPAWN_EGG.get());
+				tabData.accept(EquinoxModBlocks.ALTAR.get().asItem());
+				tabData.accept(EquinoxModItems.SUNBALL.get());
 			}).build());
 }

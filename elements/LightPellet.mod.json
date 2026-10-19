@@ -34,7 +34,9 @@
     "damageVsEntity": 4.0,
     "attackSpeed": 1.2,
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "augmented damage against darkness creatures"
+      ]
     },
     "glowCondition": {
       "fixedValue": false

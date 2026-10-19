@@ -17,6 +17,8 @@ import net.minecraft.core.registries.Registries;
 
 import net.mcreator.equinox.entity.SunkisserEntity;
 import net.mcreator.equinox.entity.LightProjectileEntity;
+import net.mcreator.equinox.entity.LightPatronEntity;
+import net.mcreator.equinox.entity.FlorevoreEntity;
 import net.mcreator.equinox.entity.DarkProjectileEntity;
 import net.mcreator.equinox.EquinoxMod;
 
@@ -31,6 +33,14 @@ public class EquinoxModEntities {
 			EntityType.Builder.<SunkisserEntity>of(SunkisserEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(1.2f, 1f));
+	public static final DeferredHolder<EntityType<?>, EntityType<FlorevoreEntity>> FLOREVORE = register("florevore",
+			EntityType.Builder.<FlorevoreEntity>of(FlorevoreEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.4f));
+	public static final DeferredHolder<EntityType<?>, EntityType<LightPatronEntity>> LIGHT_PATRON = register("light_patron",
+			EntityType.Builder.<LightPatronEntity>of(LightPatronEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(2f, 5f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -41,10 +51,14 @@ public class EquinoxModEntities {
 	@SubscribeEvent
 	public static void init(RegisterSpawnPlacementsEvent event) {
 		SunkisserEntity.init(event);
+		FlorevoreEntity.init(event);
+		LightPatronEntity.init(event);
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(SUNKISSER.get(), SunkisserEntity.createAttributes().build());
+		event.put(FLOREVORE.get(), FlorevoreEntity.createAttributes().build());
+		event.put(LIGHT_PATRON.get(), LightPatronEntity.createAttributes().build());
 	}
 }

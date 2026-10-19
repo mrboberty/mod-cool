@@ -660,24 +660,541 @@
         ]
       },
       "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "DarkProjectileProjectileHitsBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_projectile_projectile_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/equinox/procedures/DarkProjectileProjectileHitsBlockProcedure.java"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "WalkAnimationCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "walk_animation_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/equinox/procedures/WalkAnimationConditionProcedure.java"
+        ]
+      },
+      "path": "~/LightWorld"
+    },
+    {
+      "name": "IdleAnimationCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "idle_animation_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/equinox/procedures/IdleAnimationConditionProcedure.java"
+        ]
+      },
+      "path": "~/LightWorld"
+    },
+    {
+      "name": "SwingAnimationCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swing_animation_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/equinox/procedures/SwingAnimationConditionProcedure.java"
+        ]
+      },
+      "path": "~/LightWorld"
+    },
+    {
+      "name": "Florevore",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "florevore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/equinox/models/item/florevore_spawn_egg.json",
+          "src/main/java/net/mcreator/equinox/client/renderer/FlorevoreRenderer.java",
+          "src/main/java/net/mcreator/equinox/entity/FlorevoreEntity.java"
+        ]
+      },
+      "path": "~/LightWorld"
+    },
+    {
+      "name": "StarFlowerOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "star_flower_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/equinox/procedures/StarFlowerOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/LightWorld"
+    },
+    {
+      "name": "Exposure",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exposure",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/equinox/damage_type/exposure.json"
+        ]
+      },
+      "path": "~/LightWorld"
+    },
+    {
+      "name": "EntitySpawnFlorevore",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entity_spawn_florevore",
+      "metadata": {
+        "has_nbt_structure": true,
+        "files": [
+          "src/main/resources/data/equinox/neoforge/biome_modifier/entity_spawn_florevore_biome_modifier.json",
+          "src/main/resources/data/equinox/worldgen/placed_feature/entity_spawn_florevore.json",
+          "src/main/resources/data/equinox/worldgen/configured_feature/entity_spawn_florevore.json"
+        ]
+      },
+      "path": "~/LightWorld"
+    },
+    {
+      "name": "LightPatron",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_patron",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/equinox/client/renderer/LightPatronRenderer.java",
+          "src/main/java/net/mcreator/equinox/entity/LightPatronEntity.java",
+          "src/main/resources/assets/equinox/models/item/light_patron_spawn_egg.json"
+        ]
+      },
+      "path": "~/LightPatronBoss"
+    },
+    {
+      "name": "LightPatronOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_patron_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/equinox/procedures/LightPatronOnEntityTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/LightPatronBoss"
+    },
+    {
+      "name": "LightPatronPlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_patron_playback_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/equinox/procedures/LightPatronPlaybackConditionProcedure.java"
+        ]
+      },
+      "path": "~/LightPatronBoss"
+    },
+    {
+      "name": "LightPatronSummonPlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_patron_summon_playback_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/equinox/procedures/LightPatronSummonPlaybackConditionProcedure.java"
+        ]
+      },
+      "path": "~/LightPatronBoss"
+    },
+    {
+      "name": "LightPatronKnockbackPlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_patron_knockback_playback_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/equinox/procedures/LightPatronKnockbackPlaybackConditionProcedure.java"
+        ]
+      },
+      "path": "~/LightPatronBoss"
+    },
+    {
+      "name": "LightPatronExplodePlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_patron_explode_playback_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/equinox/procedures/LightPatronExplodePlaybackConditionProcedure.java"
+        ]
+      },
+      "path": "~/LightPatronBoss"
+    },
+    {
+      "name": "DarkProjectileProjectileHitsLivingEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_projectile_projectile_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/equinox/procedures/DarkProjectileProjectileHitsLivingEntityProcedure.java"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "LightProjectileProjectileHitsLivingEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_projectile_projectile_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/equinox/procedures/LightProjectileProjectileHitsLivingEntityProcedure.java"
+        ]
+      },
+      "path": "~/PolyvalentScepter"
+    },
+    {
+      "name": "Altar",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/equinox/models/block/altar.json",
+          "src/main/resources/assets/equinox/blockstates/altar.json",
+          "src/main/resources/data/equinox/loot_table/blocks/altar.json",
+          "src/main/java/net/mcreator/equinox/block/AltarBlock.java",
+          "src/main/resources/assets/equinox/models/item/altar.json"
+        ]
+      },
+      "path": "~/altar"
+    },
+    {
+      "name": "AltarOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/equinox/procedures/AltarOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/altar"
+    },
+    {
+      "name": "AltarGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/equinox/world/inventory/AltarGuiMenu.java",
+          "src/main/java/net/mcreator/equinox/client/gui/AltarGuiScreen.java"
+        ]
+      },
+      "path": "~/altar"
+    },
+    {
+      "name": "AltarOnBlockRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_on_block_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/equinox/procedures/AltarOnBlockRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/altar"
+    },
+    {
+      "name": "Sunball",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sunball",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/equinox/models/item/sunball.json",
+          "src/main/java/net/mcreator/equinox/item/SunballItem.java"
+        ]
+      },
+      "path": "~/altar"
     }
   ],
   "variable_elements": [],
   "sound_elements": [
     {
-      "name": "darkness_shoot",
+      "name": "light_shoot",
       "files": [
-        "darkness_shoot"
+        "light_sfx"
       ],
       "category": "player",
       "subtitle": ""
     },
     {
-      "name": "light_shoot",
+      "name": "dark_shoot",
       "files": [
-        "light_shoot"
+        "shadow_sfx"
       ],
       "category": "player",
+      "subtitle": ""
+    },
+    {
+      "name": "light_patron_summon_rise",
+      "files": [
+        "rise_boss_summon"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    },
+    {
+      "name": "light_patron_summon_stand",
+      "files": [
+        "stand_a_chance_boss_summon"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    },
+    {
+      "name": "light_patron_summon_handle",
+      "files": [
+        "see_how_you_handle_that_boss_summon"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    },
+    {
+      "name": "light_patron_ambient",
+      "files": [
+        "light_patron_ambient"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    },
+    {
+      "name": "light_patron_expulse_away",
+      "files": [
+        "light_patron_expulse_go_away"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    },
+    {
+      "name": "light_patron_expulse_mind",
+      "files": [
+        "light_patron_expulse_do_you_mind"
+      ],
+      "category": "hostile",
       "subtitle": ""
     }
   ],
@@ -709,10 +1226,12 @@
       "~CUSTOM:DenseLeaves"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:Altar",
       "~CUSTOM:DryGround",
       "~CUSTOM:DryGrass"
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:Altar",
       "~CUSTOM:DryGrass",
       "~CUSTOM:DryGround"
     ]
@@ -732,7 +1251,11 @@
       "DryGround",
       "WigglyLightGrass",
       "StarFlower",
-      "Sunkisser"
+      "Sunkisser",
+      "Florevore",
+      "LightPatron",
+      "Altar",
+      "Sunball"
     ]
   },
   "language_map": {
@@ -772,7 +1295,25 @@
       "block.equinox.wiggly_light_grass": "Wiggly Light Grass",
       "block.equinox.star_flower": "Star Flower",
       "entity.equinox.sunkisser": "Sunkisser",
-      "item.equinox.sunkisser_spawn_egg": "Sunkisser Spawn Egg"
+      "item.equinox.sunkisser_spawn_egg": "Sunkisser Spawn Egg",
+      "item.equinox.florevore_spawn_egg": "Florevore Spawn Egg",
+      "entity.equinox.florevore": "Florevore",
+      "death.attack.exposure.item": "%1$s got lit up by %2$s using %3$s",
+      "death.attack.exposure.player": "%1$s got lit up whilst trying to escape %2$s",
+      "death.attack.exposure": "%1$s got lit up",
+      "item.equinox.light_pellet.description_0": "augmented damage against darkness creatures",
+      "item.equinox.darkness_pellet.description_0": "augmented damage against light creatures",
+      "item.equinox.light_patron_spawn_egg": "Light Patron Spawn Egg",
+      "entity.equinox.light_patron": "Light Patron",
+      "subtitles.dark_shoot": "",
+      "block.equinox.altar": "Altar",
+      "subtitles.light_patron_summon_rise": "",
+      "subtitles.light_patron_summon_stand": "",
+      "subtitles.light_patron_summon_handle": "",
+      "subtitles.light_patron_ambient": "",
+      "subtitles.light_patron_expulse_away": "",
+      "subtitles.light_patron_expulse_mind": "",
+      "item.equinox.sunball": "Sunball"
     }
   },
   "metadata": {
@@ -781,6 +1322,9 @@
       "src/main/java/net/mcreator/equinox/world/features/StructureFeature.java",
       "src/main/java/net/mcreator/equinox/init/EquinoxModFluids.java",
       "src/main/java/net/mcreator/equinox/init/EquinoxModFluidTypes.java",
+      "src/main/java/net/mcreator/equinox/init/EquinoxModScreens.java",
+      "src/main/java/net/mcreator/equinox/init/EquinoxModMenus.java",
+      "src/main/java/net/mcreator/equinox/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/equinox/init/EquinoxModBlocks.java",
       "src/main/java/net/mcreator/equinox/init/EquinoxModItems.java",
       "src/main/java/net/mcreator/equinox/init/EquinoxModEntities.java",
@@ -819,6 +1363,14 @@
       },
       {
         "name": "PolyvalentScepter",
+        "children": []
+      },
+      {
+        "name": "LightPatronBoss",
+        "children": []
+      },
+      {
+        "name": "altar",
         "children": []
       }
     ]

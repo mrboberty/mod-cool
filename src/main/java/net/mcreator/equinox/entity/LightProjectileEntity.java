@@ -4,6 +4,7 @@ import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.enchantment.Enchantments;
@@ -22,6 +23,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.mcreator.equinox.procedures.LightProjectileWhileProjectileFlyingTickProcedure;
+import net.mcreator.equinox.procedures.LightProjectileProjectileHitsLivingEntityProcedure;
 import net.mcreator.equinox.procedures.LightProjectileProjectileHitsBlockProcedure;
 import net.mcreator.equinox.init.EquinoxModItems;
 import net.mcreator.equinox.init.EquinoxModEntities;
@@ -84,6 +86,12 @@ public class LightProjectileEntity extends AbstractArrow implements ItemSupplier
 		} else { // knockback might be set by firedFromWeapon passed into constructor
 			super.doKnockback(livingEntity, damageSource);
 		}
+	}
+
+	@Override
+	public void onHitEntity(EntityHitResult entityHitResult) {
+		super.onHitEntity(entityHitResult);
+		LightProjectileProjectileHitsLivingEntityProcedure.execute(entityHitResult.getEntity(), this);
 	}
 
 	@Override
